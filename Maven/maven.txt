@@ -1,0 +1,85 @@
+Maven- build automation tool(intenet based)   ---refer maven official website
+WHY Maven-
+
+
+Terminologies--
+groupid - company name(com.google)
+artifact id- project name(gmail)
+archetype - template of the project
+dependencies - dependent JAr files for the project
+plugins - surefile,compiler,copy plugins
+
+
+1) to maintain proper folder structure
+
+--maven maintains proper folder structure for main and test codes
+--resource folder contains other than the source codes
+--main folder contains actual code and test folder contains test code
+--test code is not an actual code only main source code can make as build to end user
+
+
+2)to manage dependencies on our behalf
+
+--pom.xml (Project object model)
+--pom.xml contains the all dependencies and plugins
+
+--maven can download the respective jar files internally while using the dependencies
+-- transient dependencies (one jar file which is dependent to other jar file)
+--maven serach the dependencies in the local repository(c:/users/narman/.m2/repository/respective jar name) whether is present or not, if it is not present then download the respective dependencies from central repository
+--just copy the pom.xml file to other device to manage all dependencies. not necessary to download everything
+--update the jdk version by using compiler plugins and update the maven project manually
+
+
+3) how maven build the code for us
+
+-- build proccess is to change the source code to installable or executable file 
+
+windows- exe  
+android- apk
+java- jar
+
+-- build the project in normal java project 
+
+project/export/export as runable jar/next
+Launch config dropdown shows all the main classes , in that we need to select which main type need to take
+library handling is to handle the supporting files to execute in the installing machine
+
+-after build success get a JAR file which is executable
+Execute command: java -jar filename.jar
+
+
+--build the project in maven 
+project/runas/mavenbuild/goals-package/apply
+generated the jar file in the respective folder, need to execute that
+Execute command: java -jar filename.jar
+
+error handling: No main manifest attribute
+Need to mention the main method in manifest.mf  (target/classes/meta.inf/manifest.mf)
+
+to resolve the error need to add the plugins
+-maven jar plugin
+-dependencu copy plugin
+
+now the jar file is executable
+
+
+
+4) can create documentation site
+
+site (for documentation)
+
+5)Build lifecycle of maven
+
+-Default (Validate,compile,test,verify,install,deploy)
+-clean
+-site
+
+Phases: lifecycle comprises of several phases
+
+validate- validate whether the artifact id missing (for ex)
+compile- compile the source code (converion of .java to .cls)
+test- test does not need to package or deploy
+package- take the compiled code and package in its distributable format such as JAR
+Verify
+Install - install the package(JAR file) into the local repository(.m2)
+deploy - copies the final package to the remote repository for sharing with other developers and projects

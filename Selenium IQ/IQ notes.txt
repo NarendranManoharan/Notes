@@ -1,0 +1,75 @@
+driver.close() --- close the window which the driver currently focus on
+driver.quit() --- close all the window
+
+
+get() -- it will not store the history , wait until all the webelement present in the DOM 
+navigate().to() -- stores the history , did not wait for the elements present in DOM
+
+--------------------------
+Screenshot:
+
+Type 1:
+1.TakesScreenshot interface (driver)
+2.call the getScreenshotAs method in srcfile
+3.create destfile
+4.FileHandler.copy
+
+Type2:
+1. Robot instance
+2. Toolkit.getdefault.getscreensize()
+3. pass that screensize in Rectangle
+4. save the srcfile using createScreencapture method 
+5. destfile
+6. ImageIO.write()
+
+-------------------------------
+Maximize options:
+
+1. driver.manage().window().maximize();
+
+2.Dimension dimension=new Dimension(1300, 768);
+   driver.manage().window().setSize(dimension);
+   
+3. Chromeoptions --> --start-maximized
+
+------------------------------------
+
+is it possible to Launch a browser without system.setproperty()?
+
+Yes
+-set the chromedriver path in environment variable
+
+-----------------------------------------
+Handling authenticated popups in selenium:
+ problem: cant inspect and sendkeys
+ solution: http://username:password@url.com   -->sending credentials via URL
+           using third party tool sikuli ,AutoIT (long process)
+		  
+------------------------------------------
+
+Rerun the test cases in TestNG
+
+-we can manually run testng-failed.xml
+-using IRetryAnalyzer interface  ---->add parameter in each @test annotation
+-Using IAnnotationTransformer(I) and IRetryAnalyzer(I) (no need to give the retryanalyzer parameter in each test annotation) ---->add the listener
+
+-----------------------------
+Assertion vs Verification(soft assertion)
+
+-Assertion /hard assertion(stops once the assertion fails)
+-verify /soft assertion ---> execute the steps even the assertion condition fails
+
+------------------------------
+TestNG annotations and their heirarchy
+-----------------------
+how to run test case multiple times without using looping:-  invocation count
+----------------------
+Exception handling in TestNG:- (expectedexceptions)
+------------------------
+How to execute dependent testcases if the master test case fails:- alwaysrun=true
+---------------
+How to download the browser drivers automatically:- WebDriverManager.chromedriver().setup()
+----------------
+How to hit the url without get and navigate
+JavasrciptExcecutor---  window.location='https://www.google.com'
+------------------

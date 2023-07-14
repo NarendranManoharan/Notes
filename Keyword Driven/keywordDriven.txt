@@ -1,0 +1,11 @@
+Keyword driven framework:
+all the actions in class have function a method type that user can easily understandable
+
+-write all the functions in keywords class
+-in runner class(main cls) we need to set the equal ignore condition with excel value and function name
+
+drawback: code maintain is not easy 
+overcome: Use Reflection API
+          classname.getClass().getMethods();
+		  
+- get the method name using reflection API and compare it with the excel value

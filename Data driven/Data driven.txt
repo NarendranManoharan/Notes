@@ -1,0 +1,25 @@
+testNG - Testing Framework
+
+1.depends on methods
+2.BeforeSuite
+3.AfterSuite
+
+
+Execution order
+-suite
+-test
+-class
+-method
+
+Parameter and dataProviders
+for each and every paremeter need to create separate class
+
+1)run the class with hardcoded parameter
+2)input the values through tesng xml file using parameter tag 
+3)using data provider
+
+
+
+
+Parameter --- harcoded or using testng
+data provider ----- hardcoded using data provider annotations

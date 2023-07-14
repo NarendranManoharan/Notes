@@ -1,0 +1,5 @@
+below than java 9 versions - log4j
+java 9 and above - log4j2
+
+Instance:
+Logger logger=LogManager.getLogger(classname.class)

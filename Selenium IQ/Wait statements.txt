@@ -1,0 +1,60 @@
+Thread.sleep(5000); (not preferable in production code)
+- which is wait till the given seconds not consider about the action
+-while the application not synchronized with our code this wait statements comes into action
+
+--------------------------------
+Implicit wait:
+syntax: driver.manage().timeouts().implicitwait(30, timeunits.second);
+
+pros:
+-which is better when ompare to thread.sleep
+- if mention it in the first line it can be applicable to all the elements in the code till driver.quit
+- wait till the element is present in DOM
+
+cons:
+- it waits only for the element present in DOM not to consider whether it is enabled or user interactable
+
+POLLING--> 0, 0.5, 1, 1.5, 2 (Request inititaed for every 0.5 second)
+
+----------------------
+
+Explicit wait:
+-it allows to command the webdriver to wait until the given conditions are met
+
+how to use:
+-create instance fot WebDriverWait 
+-wait until (condition to be met)
+
+how it is better from implicit wait:
+
+-(IW) only checks the element present in DOM(Webpage) thats all.
+-if elements are hidden or any other conditions it wil fail to execute the script
+
+-but in E.W we can handle more predefined conditions
+
+if there is network issue/apllication running slow we can go for I.W
+
+POLLING--> 0, 0.5, 1, 1.5, 2 (Request inititaed for every 0.5 second)
+--------------------------------
+
+Fluent Wait:
+
+- the fluent wait is used to tell the web driver wait for a condition, as well as the frequency with which we want to check the condition before throwing an exception
+
+Polling -- request initiated by given seconds
+- by setting the frequency , we are reducing the burden of default polling
+
+
+Syntax: 
+Wait wait = new Fluentwait(driver)
+.withTimeout(Duration.ofseconds(10))
+.pollingEvery(Duration.ofseconds(3))
+.ignoring(Exception.class)
+
+Apply method:
+Webelement profile=wait.until(new Function()
+{
+public Webelement apply (WebDriver , driver)
+{
+return driver.findelement(By.xpath("xpath here"));
+}});	

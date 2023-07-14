@@ -1,0 +1,15 @@
+Entry Criteria:
+A set of conditions to be met/satisfied before an activity can begin
+Exit criteria:
+A set of conditions to be met/satisfied before an activity can be concluded
+
+
+
+Test scenarios:
+-It is a breakup of a business requirement in a form of possible use cases 
+-With the help of test scenarios we can provide more test coverage for the functionalities in the application
+
+Requirement Traceability matrix:
+-is a document that maps and traces user requirement with test cases
+-mainpurpose of the document is to validate all the requirements are tested by atleast one test case 
+-SO that is no functionallity is unchecked during software testing

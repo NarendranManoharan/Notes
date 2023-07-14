@@ -1,0 +1,88 @@
+Git - version control software/system
+Git vs Github(providers) --its different web application
+Git --- Terminal based
+- using GIT as a underlined technologies
+- web based hosting service provider
+---------------------
+Login Credentials:
+mail: narendran241999@gmail.com
+password: NaRen@123  	
+Username: NarendranManoharan
+--------------------
+
+Topic 1:
+1)Create new repository
+2)add new file
+3)update the file with multiple changes and commit with unique name
+4)Track the historical versions in Insights/network
+---------------------------
+
+Topic 2: Branch
+
+Branch- isolate development work without affecting other branches in the repository.
+- Each repository has one default main branch, and can have multiple branches.
+- you can merge a branch into another branch using a pull request.
+
+1)create a sub branch
+2)implement the upgraded code
+3)merge that code with main code using pull request
+4)confirm the pull request
+5)Track the historical versions in Insights/network	
+--------------------------------
+
+Topic 3: Fork
+
+1)when the third person wants to changes in your repository, they dont have the access to edit
+2)So they fork the master code to their local repository and made the changes then pull request
+3)author need to aacept/decline the pull request
+----------------------------------
+
+Topic 4: Merge Conflict
+
+-when 2 different persons trying to modify the same line of code. There arises a conflict
+how to resolve the conflict?
+understand the code which is better for master and click resolve conflict
+update the code and click mark as resolved
+then usual step, merge the pull request
+------------------------------------
+
+Topic 5: GitHUB Issues
+
+- issues option will help us address the requirement
+- any user can submit a new issue to our software code.The rightful owner can assign the code to any of the team members,
+classify the issue type, close the issue, comment in the issue and so on
+--------------------------------------
+
+Topic 6: clone the code from Eclipse to Github
+
+Upload a project from eclipse to github:
+
+1.Create a new repository in github
+2.In eclipse window/showview/other/git/git reposotories/clone a git repository into local folder
+3.In eclipse team>shareproject>add to index>commit and push ---move the local file to github
+4.copy the url in git and paste in selenium and submit
+---------------------------------------
+
+
+Topic 7: clone the code from Github to eclipse
+
+Import the project from github to eclipse:
+
+1.Copy the repository url from github
+2.IN eclipse click Import>Git>Projects from Git>CloneURL
+-------------------------------------------
+
+Topic 8:  GitHUB through terminal:
+
+touch index.html ---- create a new file
+git init ---- create a new repository in local folder
+git add index.html ----add the file to repository
+git status --- check the status
+git rm--cached index.html -------remove the file
+git add .  ----add all the files
+git add *.html ----------add all the files with the html extension
+'.gitignore'  ----with the help of this status we can exclude the unwanted files by mentioned in the .gitignore file
+git commit -m "initial commit"
+
+
+****---Access token: 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

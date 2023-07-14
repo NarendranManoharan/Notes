@@ -1,0 +1,8 @@
+Framework -- Data Driven, Page Object model(POM)
+
+POM - easier maintenance --- extract the properties of findelement from the code
+
+Enhancing our POM project with selenium page factory
+
+@findby(name="name")
+Pagefactory.initelements(driver, classname.class) 

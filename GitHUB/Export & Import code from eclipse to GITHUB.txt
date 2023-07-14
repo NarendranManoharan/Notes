@@ -1,0 +1,12 @@
+Upload a project from eclipse to github:
+
+1.Create a new repository in github
+2.In eclipse window/showview/other/git/git reposotories/clone a git repository into local folder
+3.In eclipse team>shareproject>add to index>commit and push ---move the local file to github
+4.copy the url in git and paste in selenium and submit
+
+
+Import the project from github to eclipse:
+
+1.Copy the repository url from github
+2.IN eclipse click Import>Git>Projects from Git>CloneURL

@@ -1,0 +1,35 @@
+Logger:
+
+1)Logging- process of writing log messages.
+
+2)why do we need logging?
+If we use syso print statements to print log messages we can print log messages on console only
+So, when the console is closed, we will lose all those logs.
+
+3)Log4j components
+   a)Logger -> a class inside the org.apache.log4j pacakage
+              We have to initialize one logger object for eacj Java class
+			  We have logger class methods to indicate log levels
+			  Logger class methods: debug,info,warn,error,fatal
+			  
+	b)Appender -> to write messages into a file or DB or SMTP
+	      Few types are:
+		  a) JDBCAppender
+		  b) FileAppender
+		  c) ConsoleAppender
+		  
+	c)Layout -> to define the formatting in which logs will print in a repository'
+	       a) PatternLayout
+		   b) SimpleLayout
+		   c) XMLLayout
+		   d) HTMLLayout
+		   
+4)Log4j priority levels
+ debug < info < warn < error < fatal
+ 
+ 
+5) Different ways to configure log4j
+   <!-- a)Basic configurator  - it is suitable for tutorials and temporary purpose(time being purpose).//should not use in production -->
+		b)Property file configurator
+		c)XML configurator (DOM configurator)
+

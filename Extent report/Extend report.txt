@@ -1,0 +1,22 @@
+Extent report:
+
+-in first we have to check the cucumber versin and extend report version
+-extend report can provide till version 5 
+-if the cucumber version is above 6 we can use third party dependencies
+
+Step1: Configure the maven dependencies based on cucumber version
+Step2: Configure the plugin(for report generation) in cucumber options
+Step3: Create the property file and configure the report genration steps
+Step4: add the extent-config xml and configure the xml file in properties file
+Step5: To add the screenshot in report file add @Afterstep in screenshot method
+
+
+Web Report:
+
+Add "publish=true" in cucumber options. 
+-eclipse generate the url in console it can be use to view the web report 
+
+Note: the report would be self destruct after one day
+====================================
+
+Used in LMSusngCucumber

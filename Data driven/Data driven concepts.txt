@@ -1,0 +1,53 @@
+1)Hardcoded all the values in the class and call the using testng xml file
+ <test>
+    <classes>
+	   <class1="testcase1">
+	   <class2="testcase2">
+	   <class2="testcase3">
+	 <classes>
+  <test>
+  
+ drawback for the above method
+   - it shows 1 test in the TestNg report eventhough we run 3 testcases(classes), because it having 1 test tag <test>
+  
+
+ To overcome: 
+ ======
+ 2) user separate test tags for each test case 
+  
+ for ex:
+ <test>
+    <classes>
+	   <class1="testcase1">
+	 <classes>
+  <test>
+  
+  
+  <test>
+    <classes>
+	   <class2="testcase2">
+	 <classes>
+  <test>
+ Use parameter tag in testNG xml file to extract the hardcoded data from code and given it through parameter tag
+ 
+ drawback for the parameter method
+ - number of lines 
+ - xml fle not look efficient while giving 100 of data using <parameter> tag
+ 
+ 
+ To overcome:
+ =========
+ 3)use @dataprovider which use to restrict the huge number of lines
+ 
+ @Dataprovider(name="test")
+ @Test(dataprovider='test')
+ 
+ drawback: harcoded value in code 
+ 
+ To overcome:
+ ======
+ 4)read the value through excel sheet
+ 
+  apache poi
+  
+  

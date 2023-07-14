@@ -1,0 +1,68 @@
+1) Locating elements with known attribute
+//*[@id='userid']
+
+
+
+2) Locating elements with known element and attribute
+//input[@id='userid']
+
+
+3)Locating elements with known visible text (exact match)
+//*[text()='exact text']
+
+
+
+4)Locating elements with known visible text (partial match)
+//*[contains(text(), 'partial text')]
+
+
+5)Locating elements with multiple attribute
+//*[@id='userid'][@name='username'][@type='button']
+
+6)Locating elements with starting visible text
+//*[starts-with(text(), 'start of the text')]
+//*[starts-with(@href, 'value of the text')]                 {//element[starts-with(@attribute, 'value')}
+
+
+
+7)Locating element with dynamic attribute values
+//*[contains(text(), 'partial text']
+or
+//*[starts-with(@href, 'value of the text']
+
+
+=-------------------------------------
+
+8) Locating a parent element(immediate parent)
+syntax: //<KnownXpath>/parent::element name
+
+
+9) Locating a child element (immediate child)
+syntax: //<KnownXpath>/child::element name
+
+
+10) Locating ancestors of a known element (from th top of the html list)
+ancestors axes contains the ancestor of the known element 
+syntax: //<KnownXpath>/ancestor::element name
+
+11) Locating following element 
+doesnt validate the parent child element, directly fetch the tag present under the given xpath
+syntax: //<KnownXpath>/following::elementname
+
+
+12) Locating preceding element
+doesnt validate the parent child element, directly fetch the tag present over the given xpath
+syntax: //<KnownXpath>/preceding::elementname
+
+
+13) Locating following-sibling
+to locate the element(s) comes after to a known element within same html hierarchy
+syntax: //<KnownXpath>/following-sibling::elementname
+
+14) Locating preceding-sibling
+to locate the element(s) comes before to a known element within same html hierarchy
+syntax: //<KnownXpath>/preceding-sibling::elementname
+
+
+Note:
+Axes - parent,child,ancestor,following,preceding,following-sibling,preceding-sibling

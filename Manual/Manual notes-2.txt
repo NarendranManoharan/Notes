@@ -1,0 +1,78 @@
+Entry Criteria:
+A set of conditions to be met/satisfied before an activity can begin
+Exit criteria:
+A set of conditions to be met/satisfied before an activity can be concluded
+======================================
+
+
+Test scenarios:
+-It is a breakup of a business requirement in a form of possible use cases 
+-With the help of test scenarios we can provide more test coverage for the functionalities in the application
+
+Requirement Traceability matrix:
+-is a document that maps and traces user requirement with test cases
+-mainpurpose of the document is to validate all the requirements are tested by atleast one test case 
+-SO that is no functionallity is unchecked during software testing
+
+
+Testing principles:
+-Testing shows presence of defects
+-Absence of errors fallacy
+-Early Testing
+-Exhaustive testing is not possible
+-Defect Clustering (80% of the defect causing by the 20% of the module. so focus on that 20%)
+-pesticide paradox (same set of test cases will never find new bugs)
+-Testing is context dependent
+
+Test case design Techniques:
+1)Specification Based Techniques
+    -Equivalence Partitioning
+	-Boundary vaue Analysis
+	-Decision Table
+	-State Transition Techniques
+	-Orthogonal Arrays
+	-Use Case Testing
+	
+2)Structure based techniques
+    -Statement coverage
+	-Decision coverage
+	-Path coverage
+	-Condition coverage
+
+3)Experience based techniques
+    - Exploratory testing
+	-Error Guessing
+
+
+
+================
+1)Equivalence Partitioning (In-between data range)
+  The whole range of input data for a given requirement are grouped into several sets or equivalent classes
+  
+2)Boundary value Analysis (Boundary data range)
+  -to test the boundaries which separates the continuos range of inputs
+     -LOWER Boundary cases
+	 -Upper Boundary cases
+	 -On Boundary cases
+	 
+3)Decision table (Cause and Effect table)
+   -help us to test the systems behaviour with various set of inputs
+   -this technique can also be called Cause and Effect table, as it captures the driving factor (cause, input data)
+    and captures the effect (output) in the tabular format.
+	
+4)State Transition Technique:
+  - the state of an application for any given input and how the state is getting transitioned from one to another
+-State (initial state)
+-transition (changing state from one to another)
+-Event (Action performed on that)
+-Action (given output by software)
+
+
+5)Use Case testing (end user POV testing)
+ -process of defining the actions done by the actors/users on the responses of the system for the corresponding action.
+ -it is a software testing tehnique helps to identify test cases which covers the entire system on a transaction by transaction basis from start to end.
+ 
+
+6)Error Guessing Technique:
+   -Error Guessing is the method of black box testing that relies solely on the previous experience of the tester
+   -that software tester uses their past experience to determine where errors in the software may be.

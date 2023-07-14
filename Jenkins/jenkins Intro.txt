@@ -1,0 +1,20 @@
+ Jenkins
+ -Continuous Integration (CI)/delivery (CD)/deployment
+ -open source framework
+ 
+ 
+ Continuous Integration:
+ -practice of runnning your tests on a non-devloper machine automatically everytime someone pushes new code into the source repository
+ -In other words whenever we add some new code and commit it to the repository,we have to ensure that the new one shouldn't break the 
+   existing working code
+ -So its mandatory to run automated tests for every new commit.
+ - This kind of continuous integration testing process is called CI.
+ 
+ Continuous delivery:
+ -it is like a preparation process
+ -the process of making the code to be deployable
+ 
+ Continuous deployment:
+ -it is the actual process of deployment
+ 
+ Tool we are using Jenkins( bamboo, Travis CI, hudson)

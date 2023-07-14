@@ -1,0 +1,129 @@
+Software - which is written in any coding language and delivered as executable file for end user
+
+SDLC 
+  -> Requirement Analysis
+  -> Design
+  -> Code
+  -> Test
+  ->  Deploy
+
+STLC
+   -> Requirement Analysis
+   -> Test Planning
+   -> Test case development
+   -> Test environment setup
+   -> Test Execution
+   -> Test Cycle Closure
+   
+1)Black box testing?
+    -test the product without knowing the actual implementation and the source code of the product
+	
+	How to do black box testing
+	 - User story
+	 - Input
+	 - Test Strategy
+	 - Test case design techniques
+	 - Test case
+	 - Execute
+	 - Closure
+	 
+	 Types:
+	  - All Functional requirement
+	  - Non-functional 
+	  - Rgression 
+	  
+2)White box testing?
+      - internal structure,
+	  -design and coding of software are tested to verify the flow of input-output and to improve design, usability and security
+	  
+	  
+3)Functional vs non-functional
+    - to test the functionallity of the product
+	- to test the performance of the product is called as non-functional
+	
+4)Smoke testing? (stability)
+    -to find whether the build is stable or not by testing whether the most critical components working or not
+	-to save effort and time
+	
+  A sample flow
+     Dev team release build - > QA team performs test on critical components
+	 ->build is stable ->further testing ->build fails ->send back to developer
+
+5)Sanity testing?(rational)
+   -performed after a new build is received
+   -this new build could be a reusltant of inclusion of new functionality or due to bug fix
+   
+6)Regression testing
+    -testing the existing(across the system) and no new issues raised(across the system) 
+	  
+7)Retesting -> to check if the bug has been fixed or not
+
+
+8)Adhoc testing
+  
+  What is ad-hoc testing?
+  -done without being planned, organized or reheaesed
+  -testing an application using logical an illogical scenarios and check whether the application has any bugs
+  or not is called ad-hoc testing
+  
+  Types: Buddy(dev+tev), Pair, Monkey(Gorilla)
+ 
+9)Defect and Bug
+   - both are interchangable
+   -deviation b/w  actual and expected behaviour of the application
+   
+10) Bug Lifecycle
+
+ findBug -> new/Open -> Assigned to DEV ->validate the bug whether itis valid or not 
+ ->In progress ->fix ->tetsing
+ 
+11)severity vs Priority
+
+Severity: It is a measure to indicate the impact of the bug can have on the software product
+
+Categories of severity:
+-Low
+-Minor
+-Major
+-Critical
+
+Priority: Bug priority refers to how urgently a bug needs to be fixed
+
+levels of bug priority:
+-Low
+-Medium
+-High
+
+
+12)STLC
+
+Requirement Analysis:
+-Testing team studies the functional/non-functional requirements from testing point of view
+-Automation feasibility for the testing project is also done in this stage
+-Find out what types of tests to be done
+-Create requirement traceability matrix.
+
+
+Test Planning:
+-A test plan is a detailed document that details the test strategy, objectives, schedule, estimations
+deadlines and the resources required for completing the particular project
+
+-It is a blueprint of runing the tests needed to ensure the software is working properly maintained by 
+Test architects or test managers
+
+
+Testcase Developement:
+-Once the test plan is ready, the test data is colected for the testing and then test cases are written and reviewed
+
+Test environment setup:
+-Mostly this will be done by operations Team or sometimes Dev team.
+-when the environment is setup, smoke test is performed
+
+Test Execution:
+-This is the regular part of the work for testers
+-executing the test cases, finding the bugs, tracking the bugs to closure, retesting, mapping defects to test cases in RTM are some activities comes under this phase
+
+Test closure;
+-Test completion, collection of test results and report metrics.
+-Analyse the artifacts obtained in this cycle and plan for effective future testing
+  
