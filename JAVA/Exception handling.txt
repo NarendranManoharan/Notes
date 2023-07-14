@@ -1,0 +1,29 @@
+Exception handling
+
+Exception - undesirable or unexpected  event which ocurs during the  execution of the program. it can be handled by program
+Error -is a severe problem which cant handled by the program (ex: system runs out of space)
+
+Types of exception :
+1.checked  (compile time exception)
+2.Unchecked (run time exception)
+
+How to handle unchecked exception
+- using try catch block
+
+public void method(){
+
+try{
+  //trycode
+  }
+ catch {
+  //code for handling the exception (recovery mechanism)
+  }
+ }
+
+
+- catch block save our code from code break, it will handling the exception and execute the further code
+-parent exception is placed priority in code before the generic exception(arithmetic or nullpointer exception)
+
+Finally block:
+- the code which will executed even if the exception occurs or not
+  (contains codes like closing connection if db)

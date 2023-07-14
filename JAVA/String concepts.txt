@@ -1,0 +1,51 @@
+
+String interface implements serializable, comparable and charsequence
+Charsequence implements String , stringbuffer and stringBuilder (child classes)
+
+Immutable (if the duplicate value is created it is not override the old one, its just point the new one, then the old one is still in the heap memory)
+Mutable (if the duplicate value is created it will override the excisting one)
+--------------------------
+
+String concepts
+- its a character sequence
+- its immutable(non changable)
+
+methods:
+charat
+indexat
+length
+etc..,
+
+
+types
+-String literal (memory efficiency)--heap memory
+-new String keyword
+
+------------------------
+String Buffer 
+-is mutable (changable)
+- is synchronized/thread safe (multiple thread cant access simultaneously)
+- only work with new keyword not with literal (StringBuffer s=new StringBuffer("naren"))  {not work with --> StringBuffer s="naren"}
+
+methods:
+1.reverse
+2.replace
+3.delete
+4.insert
+5.capacity
+
+
+
+---------------------------
+
+
+String builder
+- is mutable (changable)
+- is non synchronized/not thread safe (multiple threads can access it simultaneously)
+
+methods:
+1.reverse
+2.replace
+3.delete
+4.insert
+5.capacity

@@ -1,0 +1,6 @@
+How to write a file in JAVA
+
+1. FileWriter --> straight forward, direct interaction with files, less performance
+2. BufferedWriter --> easiest way, performance wise better and widely used
+3. FileOutputStream -->  for writing raw byte array information (eg: image)
+4. Path --> this also write byte array

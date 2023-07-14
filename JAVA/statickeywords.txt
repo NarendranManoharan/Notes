@@ -1,0 +1,19 @@
+-----------------
+Static Keyword
+-use with  class, variable, method and block{}
+- if we make a member as static we can acces the member in the class without the help of object. we can directly call the member.
+ (Static memeber doesnt need anyone help like object, they can call as individual)	
+- we can call static method from non static method but vice versa not allowed
+
+Static block
+-class can have multiple static blocks
+- gets execute when the class is loaded in memory
+- static block have high priority than main method in execution
+
+Static variables
+- common to all the instances (or object) of the class because it is a class level variable
+- while using static keyword to the variable it stores the final given values to all the object.
+
+Static class
+- A class can be static only if the class is nested class
+ dont need this bcoz we wont use nested class

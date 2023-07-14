@@ -1,0 +1,15 @@
+Polymorphism
+
+-capability of method to do different things based on the object that is acting upon
+
+Types:
+
+1.Static/Compile/early binding (Overloading)
+2.Dynamic/Runtime/late binding (Overriding)
+
+Overloading - Method name should be same , passing arguments should be different (used in the same class)
+
+Overriding (used in inheritance)
+- done in parent/child relation
+-when a childclass not satisfied with the implementation provided by parent class and created the same method name with different implementation called as overriding
+

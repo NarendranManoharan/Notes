@@ -1,0 +1,63 @@
+Collection:
+
+List.........
+1.Arraylist (C)
+2.Linked list (C)
+3.Vector (C) ----- not imp -legacy classes
+4.Stack (C)----- not imp  - legacy classes
+
+
+
+
+
+1.Arraylist (C) - supports easy search and difficult in insertion and deletion
+Instance 
+
+Parentclass                   Childclass
+List<String> arrayList= new Arraylist<String>();
+<> --> Generics
+
+-maintain the insertion order
+-Multiple Null insertion is possible in arraylist
+-In array list duplicate string allowed (add method)
+-arrayList is not preferable for insertion and deletion
+-it is preferable for retrieval operation
+-default capacity of arraylist is 10
+
+
+-to retrieve (get method)
+-to know thw index position (indexof)
+-if the search element not present in arraylist it will return -1
+-it is not synchronized and not thread safe
+-datastructure is resizeable Array  or growable array
+-if generics is not added in list instance we can add any kind of datatype in the list
+
+Iterating methods in List
+1.for each
+2.for
+3.Iterator (only for forward traversing)
+4.ListIterator<String> iterator= arrayList.listIterator();
+  -forward traversing (hasnext())
+  -reverse traversing (hasprevious())
+  List only have the above iterator
+  
+
+
+2.Linked list 
+
+- it is not effective for search operation, preferable for insert and delete
+- there is no default capacity for linked list
+-linkedlist implents only two marker interface(Serializable, clonable)
+
+Synatx
+LinkedList<String> linkedlist=new LinkedList<String>
+
+Methods:
+addfirst
+asslast
+removefirst
+removelast
+poll (same as  removefirst)
+pollLast (same as removelast)
+removefirstoccurenceof(int)
+removelastoccurenceof(int)

@@ -1,0 +1,58 @@
+SET (interface)
+ -	Duplicate values not allowed
+ - insertion order is not maintained
+ - it is interface
+ -can insert heterogeneous objects(if generics are not used)
+
+ 
+ Types:
+1.HashSet (class)
+2.LinkedHashSet (c)
+3.TreeSet (c)
+
+
+ 1.HashSet
+ 
+ - deafult capacity-16
+ - Data stored based on hashcode, so search is very effective
+ - insertion order is not maintained
+ - null insertion allowed in first place
+ -duplicate values not allowed
+  -implements two marker interface (serializable,clonable)
+ -default capacity-16
+ - it is preferable for searching operation
+ 
+ Syntax
+ HashSet ref=new HashSet();
+ 
+ 2.LinkedHashSet
+ - Insertion order maintained
+ - Duplicate values not allowed
+ - allowed null
+ Syntax
+ Set ref=new LinkedHashSet();
+ 
+ 3.TreeSet
+ - Duplicate values not allowed
+ - Heterogeneous objects not allowed
+ - Elements retrived in Natural sorting order
+ - underlying DS is Binary search Tree
+ - null insertion not allowed
+
+ 
+Syntax
+TreeSet<integer> ref=new TreeSet<integer>();
+
+Headset(); retrive the value less than the given value
+tailset(); retrive the value greater than the given value
+subset(); inbetween values
+Comparator(); returns null if the sorting is default natural order ---- imp
+higher()
+lower()
+pollfirst()
+pollLast()
+ 
+ 
+ -Iterator  (for fprward traversing)
+ -descendingIterator (for reverse traversing)
+ 

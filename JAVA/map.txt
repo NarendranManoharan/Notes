@@ -1,0 +1,54 @@
+MAP (I)
+1. Hashmap (C)
+2. LinkedHashmap(C)
+3. Treemap (C)
+
+
+Nature of map:
+- MAP(I) is not child interfaces of Collection(I) and hence it is not considered to be a true collection
+-it represents data in Key-Value pair
+- Duplicate keys are not allowed in map
+- Duplicate values are allowed 
+Example:
+Enployee(KEY) - Employee Name(Value)
+Pincode (KEY) - Town or City Name (Value)
+
+
+1.Hashmap
+- Duplicate keys are not allowed but duplicate values are allowed
+- only one null key is allowed
+- order is not preserves as it uses Hasing, so cant predict the retrieval order of the elements inserted
+- value of the map can only be fetched using its key
+-Insertion order not maintained
+-when try to add duplicate keys the value will be overwrite and try to add duplicate null keys also the value will be overwrite
+
+Syntax:
+HashMap<Key, Value> ref= new HashMap<Key, Value>();
+1.put() - add method
+2.putall() - copy of the complete values
+3.clear()
+4.containskey()- check the map contains the given key
+5.containsvalue() - check the map contains the given value
+6.clone() - 
+7.isEmpty()
+8.Keyset() - retrieve the key set 
+9.get()
+10.values()- retrieve the entire values in the set 
+11.entryset()- 
+
+
+
+2.LinkedHashmap
+
+-Insertion order maintained
+-when try to add duplicate keys the value will be overwrite and try to add duplicate null keys also the value will be overwrite
+
+
+3.Treemap
+- Arrange in Natural sorting order based on key 
+- Duplicate keys are not allowed , but duplicate values are allowed
+- when try to add  duplicate keys the value will be overwrite
+- Null key is not allowed
+
+Nithi@2209!
+A0323121210

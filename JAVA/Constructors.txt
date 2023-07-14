@@ -1,0 +1,6 @@
+Constructor is used to initialize the newly created object
+
+Default constructor - used to provide the deafult values to the object like 0, null
+No argument constructor- it will allow us to write the logic when object is created.
+Parametrized constructor- objet created with parameter
+

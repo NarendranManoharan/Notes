@@ -1,0 +1,4 @@
+if
+else
+if else if(less number of conditions)
+Switch case(to use many conditions)

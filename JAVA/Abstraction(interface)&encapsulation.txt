@@ -1,0 +1,24 @@
+Abstraction - hiding the implementation details
+
+how to acheive abstraction 
+1. Abstract class (0 - 100% abstraction)
+2.Interface (100% abstraction)
+
+- if any one of the method(function) in class is abstract then the calss name also be abstract
+- if a class is having  one unimplemented method, then the method should be declared abstract	
+- abstract class have both abstract method and concrete method
+- Abstract class wont allow to create object
+- if the child does not implement all the abstract methods of parent class, then the child class need to be declared abstract as well
+
+
+
+Interface
+-Like a class but it is not a class
+- interface can have methods and variables just like class but the variables are public, static and final by default
+- methods declared in interface are abstract by default
+- class can use the interface using the implements keyword
+- an interface use another interface by using extends keyword
+
+
+Encapsulation
+- process of binding data and methods together into a single unit {class}
