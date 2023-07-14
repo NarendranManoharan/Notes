@@ -1,0 +1,9 @@
+Configurations:
+ 
+1)deafutConfigurations()
+2)using addOptions(Option.) we can return the msg as null
+3)using addOptions(Option.	) it always returns a list
+
+
+Another way of using configurations:
+Configuration.builder().options().builder();

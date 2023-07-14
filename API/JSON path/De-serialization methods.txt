@@ -1,0 +1,35 @@
+Deserialization is the process of convert back the json file into java object:
+==============================
+Deserialization using Object Mapper:
+1.objectMapper from Jackson Databind
+2.Using readvalue function and store all the json data in pojo object
+    Employee employee=mapper.readValue(jsonfile, Employee.class);
+
+===================================
+Deserialization using JAYWAY JSON path:
+
+Questions;
+1)evaluvate the json path expression and store it in POJO object
+2)Deserialization using JAYWAY JSON path?
+
+Steps:
+1)create object for JacksonMappingProvider
+2)configure the mapping provider
+3)parse and read the file using Jsonpath and store it in POJO object
+
+  Employee employee=JsonPath.using(configuration).parse(jsonfile).read("$", Employee.class);
+=======================================
+
+Deserialization using Restassured Jsonpath:
+
+-used restassured Jsonpath
+-use from objcet for reading the json file
+-use getobject func for get the data and store it in POJO object
+============================================
+
+Deserialization using Restassured as() function:
+
+-extract the body and using as() function
+-as(new Typeref <Map<String, Object>>())
+
+==========================================

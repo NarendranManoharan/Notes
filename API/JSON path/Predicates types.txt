@@ -1,0 +1,36 @@
+Predicates:
+1)Inline
+2)FilterAPI
+3)customized 
+
+
+1)Inline predicate - place in expression line
+- &&
+- ||
+- !()
+
+2)FilterAPI predicates -  
+
+-Using Filter class
+-inside filter method use criteria 
+-using jsonpath send the filter object into the placeholder
+
+
+Filter ORoperationFilter=Filter.filter(
+				Criteria.where("category")
+				.is("fiction").and("price").gt(10)
+				);
+		List<Map<String, Object>> result=JsonPath.parse(jsonfileloc).read("$.store.book[?]", ORoperationFilter);
+	
+
+3)Customized predicates:
+-using predicate Interface we are using Anonymous Inner type
+-this is called functional interface (which is having only one method)
+-implement the method with 
+    boolean predicate=ctx.item(Map.class).containsKey("isbn") ;
+
+(or)
+
+-Using lambda expression
+
+Predicate refvariable= ctx->ctx.item(Map.class).containsKey("isbn");

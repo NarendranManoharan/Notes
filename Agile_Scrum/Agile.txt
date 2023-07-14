@@ -1,0 +1,74 @@
+Agile vs waterfall
+
+agile misconsumptions
+-agile is fast
+-user can give requirement at any point if time in developement
+-No documentation needed
+
+
+Frameworks
+-Scrum
+-KANBAN
+-SAFe
+
+
+SCRUM
+
+-Scrum is framework used in agile methodology to develop the project
+-Scrum is a iterative and incremental process
+-framework for developing and sustaining complex products
+
+Scrum roles:
+-Developers(Team)
+-Product owner
+-Scrum master
+
+
+_backlog - Pending task(product backlog/sprint backlog)
+_Sprint planning- Discussion b/w product owner and team about take set of requirement and complete with in set of mandays
+_Standup/Scrum meeting - what we have done yesterday and what to do today and anu showstopers
+_Sprint review - product review
+_Sprint Retrospective - review on team members how they perform in task
+
+
+
+Product owner: 
+- providing the vision of the project to the team
+- Managing the product backlog the in a clear and transparent way
+- Prioritize the backlog to achieve the best
+- providing the product backlog in a clear way to team so that they can make better decisions
+
+Team:
+- Self organized(what to commit and how to commit)
+- cross functional(anlaysis, dev, testing, DB)-->knowledge about everything
+- Team is accountable as a whole (No blame game on a single person)
+- Usually 7 to 10 persons
+
+Scrum: (Agile, Scrum coach)
+- Helps team to adopt scrum and self organise
+- Protects the team from outside interference
+- Conducts scrums events
+- Eliminates obstruction for the progress of the team
+
+Note: Scrum master is NOT and Should NOT be the Product owner/Manager
+
+Note: Every sprint must have a potentially shippable increment 
+  
+Scrum artifacts:
+- work or value created by the scrum participants which is transparent and helps team to inspect and adapt 
+- the artifact details the product  being developed , actions needed to produce the product and actions performed during the project
+
+
+
+Product backlog - its not a stagnant one it also evolve with the developement (requirement can add at any point of time)
+Sprint Backlog - set of tasks selected from the product backlog. to develop the sprint backlog with the prioritise tasks which extracted from product backlog
+Increment - resultant product of the sprint produced by complete the sprint backlog  tasks
+
+
+Scrum values:
+-courage
+-focus
+-committment
+-Respect
+-Openness
+

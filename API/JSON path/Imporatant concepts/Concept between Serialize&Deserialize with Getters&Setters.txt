@@ -1,0 +1,11 @@
+-While doing serialization object mapper internally calls the getter function
+
+Serialize:
+POJO ---->ObjectMapper------>Jsonbody
+1.we explicitly call the setter function to set the vaue in POJO
+2.But objectMapper function call the getter method implicitly to get the values from POJO
+
+
+Deserialize:
+Jsonbody ----->ObjectMapper ------>POJO
+1)ObjectMapper calls the setter value implicitly to set the jsonvalues in POJO

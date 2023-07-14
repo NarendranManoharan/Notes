@@ -1,0 +1,6 @@
+Mocking:
+https://b1deed73-6b67-4df5-9076-647fccaef623.mock.pstmn.io
+- create a new mock server and add collections in that mock server
+- create an example responsenfor each request
+- and create a manual json body in that example
+- once the example created hit the request to get the sample response

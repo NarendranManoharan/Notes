@@ -1,0 +1,21 @@
+CLI
+
+-npm install -g newman
+
+-newman run "exported json file"
+-newman run "collectionlink"
+-n 2                  --->run the command 2 times
+-d data.csv           ----> input file through cli
+--folder "foldername" -----> to run the particular folder
+
+To export data as particular format:
+-r htmlextra
+-r junit --reporter-junit-export
+
+To select environment variables
+-e "exported envvironmemt file"
+
+
+
+
+

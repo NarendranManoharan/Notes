@@ -1,0 +1,16 @@
+1)Given vs With in request specification:
+-predefined the set of common steps in request specification
+-call the methods when neeed
+-given() and with() both are  return the same value request Specification
+
+
+2)Can we define multiple RequestSpecification
+-Yes we can define multiple RequestSpecification based on our needs
+
+
+3)How to set the default request specification?
+-Restassured.requestSpecification=mention the request soecification path here 
+
+
+4)RequestSpecBuilder
+-which is use to build request specification

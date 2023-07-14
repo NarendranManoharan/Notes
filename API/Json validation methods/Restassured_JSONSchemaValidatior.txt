@@ -1,0 +1,30 @@
+JSON Schema
+JSON - data representation
+Schema- how the actual data looks
+
+Keywords- schema, properties, representation
+
+
+-Json schema is a blueprint of JSON data, schema represents how the json data build
+
+Why we need JSON schema validation?
+-We all know JSON schema is a blueprint of JSON(Request/response)
+-We have seen different methods of constructing JSON payload request(String, json file, java collections, POJO)
+-JSON schema validation acts as a way to ensure that the request or response JSON is as expected and in allignment with the schema we designed
+
+How to do JSON schema validation?
+-we have several libraries
+- the one we using is io.rest-assured.json-schema-validator
+
+Using rest-assured JSON schema validation we have two methods:
+=============================
+1)matchesJSONSchemaInClasspath()
+-this methods accept only String type
+-we have to keep the schema data file under src/test/resources, so that it can be pass as String inside the methods
+-keep the input.json file in anywhere and load the data using File.
+
+===============================
+2)matchesJSONSchema()
+-this method accept multiple input types File, InputSTream, Reader, String
+
+

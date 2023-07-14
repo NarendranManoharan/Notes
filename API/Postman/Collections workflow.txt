@@ -1,0 +1,17 @@
+Running a collection
+-using monitors
+-create a monitor for specific collections and set the timer to run
+
+
+Workflow :
+-either change the heirarchy in collection level (or) from the run
+-on ither way we can set the execution order through scripts
+
+postman.setnextRequest("value")
+in value field we can set the req id also
+
+id format: 28137962-609bc1ca-4179-43fc-a55a-51a7c2e3ada2 (userid + reqid)
+first 8 numbers indicates userid: 28137962-
+after that req id: 609bc1ca-4179-43fc-a55a-51a7c2e3ada2
+
+-setnextRequest executes only after all the test snippets executes

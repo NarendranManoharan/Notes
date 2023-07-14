@@ -1,0 +1,16 @@
+Authorization using Restassured:
+
+1)auth().basic("username","password")
+
+2)Apikeyauth
+-using query param (or) header
+-       given()
+		.baseUri("https://api.openweathermap.org/data/2.5/weather")
+		  .queryParam("q", "Trichy")
+		  .queryParam("appid", "994c9ec12c75223038a0837a6830d788")
+		  
+3)Bearer token:
+-using the header function we can pass the bearer token
+
+         .header("Authorization", "Bearer "+Token)
+

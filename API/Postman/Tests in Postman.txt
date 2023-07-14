@@ -1,0 +1,16 @@
+Tests:
+=======================
+Syntax: pm.test("test name", function(){  })
+
+pm.response.to.have.status(200) -->(BDD Chaining)method chaining in BDD style
+pm.expect(pm.response.code).to.eql(200) --> Using expect function
+
+To validate some value in response:
+pm.test("test case name", function(){
+  var jsonResponse=pm.response.json()
+  pm.expet(jsonResponse.key).to eql("value")
+  })
+  
+To check the value present in response 
+
+pm.expect(pm.response.text()).to include("value")

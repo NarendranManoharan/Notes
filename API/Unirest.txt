@@ -1,0 +1,12 @@
+Using unirest:
+1. Copy the maven dependency for unirest
+2. unirest.post("url).body("json body).asJSON();
+
+Stateless - when user login the server cant create the state, it create access token instaed
+-by using the access token the api can hit any server in the specific application
+
+Stateful - user state created in the server when the user loged in , it leads to load balancer cant send the API to another server 
+i.e: a XXX application has two server 
+-on first time user login in server 1,it creates the user state(session id) in that server
+-in case the server cant handle the extreme load, the load balancer send the user api to the server 2, but in server 2 the user state is not cretaed.
+-so it cause some difficulties

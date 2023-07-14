@@ -1,0 +1,9 @@
+what dataype json path returning:
+
+1)Definite path - return a single value
+
+2)Indefinite path 
+// ..deep scan
+// ?(expression)
+// [0,1] or[0:3] or [*]
+

@@ -1,0 +1,58 @@
+REST Webservices:
+
+Definition:
+Webservices-A service which is available over internet is called web services
+API - Application programming Interface this acts as intermediary between two different applications
+
+Web services- machine underastandable language (XML, HTMl, JSON) and easily transfer through network (Receiving end is an software )
+API- human readable format (receiving end is human)
+
+Terminologies:
+Client - who made the request
+Server - the one who get the request
+URL -Uniform Resource Locator
+HTTP, HTTP methods,Headers, Content types
+Response, status codes
+JSON/XML
+
+HTTP(Hypertext transfer protocol) url will return the HTML(Hypertext markup language)file
+SMTP - mail transfer protocol
+FTP- file transfer protocol
+
+HTTP methods(request):
+
+GET:
+-to retrieve resource representation/information only- and not to modify it in any way
+-do not change the state of the resource, these are said to be safe methods
+-GET APIs should be idempotent(doesnt change the state of the resource)
+-GET Request will return the resource if found on the server with status codes and the response body.
+-If the resource is not found, then the relevant status code will be returned.
+
+POST:
+-create a new resource
+-POST requests are not SAFE methods
+-POST request are not idempotent.(i.e)invoking two identical POST request will result in two differenet resources containing the same information (except resource ids)
+-return a status code, if the resource is successfully created.
+
+PUT: (update)
+-to update existing resource
+-if the resource does not exist then API may decide to create a new resource
+
+DELETE:
+-Delete APIs are used to delete resources
+-if the resource is present then the resource will be deleted and the relevant status codes will be sent back
+-DELETE method is idempotent in official documentation
+
+Rarely used: patch, copy etc..,
+
+HTTP Response:
+-When a request is submitted by a client, the server has to send back the response along with the status codes
+-The response can be anytype like XML, JSON or plain text etc
+-JSON is the widely used representation of the resource beacuse of its lightweight and verbose nature.
+
+Status codes:
+1XX--> 100 series
+2XX--> 200 series -->indicates the success reason (200- get request success / 201-postrequest success)
+3XX--> 300 series -->indicating redirection
+4XX--> 400 series -->Error on client side (User can handle this)
+5XX--> 500 series -->Error on server side(User cant handle this, only the server maintenance people can handle)

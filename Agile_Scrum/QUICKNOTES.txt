@@ -1,0 +1,14 @@
+How the scrum works
+-Getting the requirement from the client
+_Product owner make the requirmemnt as mappping and prioritize the requirements based on client need
+-in that map all the requirememt is in type of epic and what are all the user stories placed under the epic 
+-And making the map as Backlog
+
+Story points
+- overall effort required to fully implemented a PBI
+- Traditional software teams give  estimates in a time format: days, weeks, months
+- that is easier to provide estimates , but thats not what we will do in agile
+- already mentioned that story point is effort and effort is not equal to time
+
+
+https://narendranmanoharan.atlassian.net/jira/software/projects/AUG/boards/1/backlog

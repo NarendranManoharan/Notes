@@ -1,0 +1,46 @@
+Client/Server Architecture
+1-Tier architecture
+2-Tier architecture
+3-Tier architecture
+
+
+1-Tier architecture:(Client computer and File server present in same server)
+word document, excel, notepad 
+-just enter the data and save, it needs UI and file server(harddisk)
+
+2-Tier architecture(Client server, Database server)
+multiple clients sending data to local DB
+-here client and db present in different system
+
+3-Tier architecture (Client server, Business Logic Layer, Database server)
+
+Presentation Layer - HTML5, Javascript, CSS - {GUI testing} - selenium
+Applicatin Layer - JAVA, .net, c#, python , c - {API Testing/webservice testing}
+Data layer - mysql, orcale, sql server, etc.., - {DB testing} 
+
+What is API?
+-Application programming interface
+-it enables communication and data exchange between two seperate software systems
+
+What is Webservice?
+-ALL Webservices are API only but not all API's are webservices
+
+Difference b/w API & Webservice
+-Webservice is an API wrapped in HTTP
+-web service might not perform all operations that API would perform
+-Webservice need network where API doesnt need a network for its operation
+
+Types of webservices:
+-SOAP (Simple Object Access protocol)-->only XML request and response supported
+-RESTful web services (Representational State transfer)
+
+
+https://reqres.in/api/users?page=2
+
+
+https://reqres.in ---> Domain
+/api/users ---> Path parameters
+page=2 --->Query Parameter
+
+URL - Uniform resource locator
+URI - Uniform resource Identifier

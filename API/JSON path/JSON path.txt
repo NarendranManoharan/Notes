@@ -1,0 +1,52 @@
+JSON PATH:
+two different libraries:
+1)jayway json path
+2)Restassured json path (default while add rest assured libraries)
+
+Data------<Query>--------<Subset of data>Result
+json        jwayJSONpath
+
+Terminologies:
+
+1)Notation(Dot,Bracket) --symbolic  representation
+2)Expression - Query
+3)Predicate - Conditional statement
+4)Filters - operators
+5)Dictonary{} - data between { }
+6)List[] - data between [ ]
+
+Notations:
+xpath         Jsonpath
+/               $                 - from the root element
+/               . or [""]         - To indicate the child
+.               @                 - To indicate the current element
+*               *                 - All elements/Wildcard
+//              ..                - deep scan/recursive descent 
+na              [start:end]       - to slice the array
+[]expression    [?(<expression>)] - Filter expression. The result of this should be a boolean one(for JSON)
+
+deep scan/recursive descent: search again and again
+no matter how many times the instance present it retrieves all
+
+
+$..* - to eliminate the root level dictionary key and elimante the next level dictonary keys and so on
+
+Filters:
+using logical operators:
+- $.[?(@>2)]   to fetch the numbers which is greater than 2
+- $.[?(@==12)]
+- $.[?(@<10)]
+
+conditional filters: criteria
+- $.[?(@ in [1,2,3,70])] to check these numbers include in json body
+- $.[?(@ nin [1,2,3,70])] to check these numbers not include in json body
+
+$.min()
+$.max()
+$.avg()
+$.length()
+$.sum()
+$.stddev()
+
+ex: $.members[?(@.age>1000)].name
+ 

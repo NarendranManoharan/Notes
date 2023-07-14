@@ -1,0 +1,37 @@
+POSTMAN -Manual Api testing tool
+
+Important sections:
+-Request Bar 
+-History
+-authorozation
+-Params (if we need to send any data in url we can use the params) note: that is dependent on API structure
+-Headers 
+-Body
+-Tests (to write the test cases to validate_
+-Response console(Headers, body,Cookies,Testresults)
+
+Sample test case to validate the status codes :
+	pm.test("To check the page count", function(){
+    var jsonDATA=pm.response.json();
+    pm.expect(jsonDATA.page).is.eql(1)
+});
+
+
+200 -OK (Get response)
+201 -Created (Post response)
+200 -OK (Put response)
+204 - No Content (Delete response)
+
+404 - Not found (resquest cant get the resource in server)
+
+
+Definitions:
+1)Parameters:
+Request parameters are used to send additional information to the server. A URL contains these parameters. 
+There are two types of parameters:
+1)Query Parameter 
+    -Query parameters are appended to the end of the request URL, following '?' and listed in key-value pairs, separated by '&' 
+    -Syntax:?id=1&type=new  
+2)Path parameter
+    -These are part of the request URL, which are accessed using the placeholders preceded by ':' 
+    -Example:/customer/:id  

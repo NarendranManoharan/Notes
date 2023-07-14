@@ -1,0 +1,39 @@
+Design pattern - to avoid multiple instances
+
+-Singleton design pattern (Created only one instance for the class at any time)
+
+1.when wN
+
+
+	private static LoginPage loginpageInstance;
+	
+	public LoginPage() {
+		
+	}
+	
+	public static LoginPage getinstance() {
+		
+		if(loginpageInstance==null) {
+		loginpageInstance=new LoginPage();
+		}
+		return loginpageInstance;
+	}
+	
+	
+3. create the object thru both pagefactory and manually system shows null pointer expection in runtime
+
+problem - using multiple static keyword which is consume more space
+overcome - make the getter class for the class and call it using repsective object
+
+problem - multiple objects for same class
+overcome- singleton design pattern 
+
+problems - avoid getter method to show the operation in main class
+
+
+-------------------
+rerun failed cases:
+-plugin={"rerun:target/failed_scenarios.txt}
+
+
+-------------------

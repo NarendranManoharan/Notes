@@ -1,0 +1,11 @@
+Jackson annotations:
+
+1)Json Serialization annotations
+ -JsonAnyGetter
+     to serialize a map into json
+     which eliminates the root dictionary name(map reference name)	
+	 use the JsonAnyGetter annotations in get functions
+	 
+2)JsonGetter
+      to rename the property in JSON without change anything in the respective variable 
+	  @JsonGetter(value="xxx")

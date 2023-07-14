@@ -1,0 +1,46 @@
+Rest Assured:(libraries)
+
+Getrequest:
+-Hit the GET request of rest assured for https://reqres.in/api/users/2
+-Store the result in the Response datatype
+-Fron the response, either use body() or getBody() to obtain the response body
+-The response obtain is like a JSON object, so obtain the response as String  using asString() or print the JSON asPrettyString()
+
+we need to do this in BDD style method chaining:
+
+General syntax:
+Given-> is like setting preconditions or background or any authentications for the API.
+can be used for setting request headers, query, cookies etc.,
+
+When-> this doesn't have much functionality, when you get/put/post/delete.
+	This actually precede the actual get/put/post/delete methods
+
+Method(get/put/post/delete) etc..,
+
+Then-> this can be used in asserting the results or logging etc.,
+Note:  if we use then function then the response coulbe be saved in ValidatableResponse only, it can no longer in Response
+
+===============================
+
+Post Request:
+-Post Url: https://reqres.in/api/users
+-Post request is used to create resource on the web server
+-Status code of post request will be 201-Created
+-Generally speaking we have to give necessary headers for authentication, content types, accept JSON body to create the resource
+-To create JSON body  there is a lot of ways using JSon simple, Gson, jackson or any other json parsing library
+-You can keep the json body in the file and read the json from that file instead of constructing it.
+
+Note: Content type is most important while performing post operation
+==================================
+Put vs Patch:
+-When we need to replace existing resource entirely, we can use PUT.
+-When we are doing a partial update, we can use HTTP PATCH request
+-Need to give which resource we are going to update
+==========================
+Delete:
+-Delete the resource from the web server
+
+
+
+Static import:   <<<  import static io.restassured.RestAssured.*; >>>
+we can change resuassured as static import, so need not to use restassured all the time

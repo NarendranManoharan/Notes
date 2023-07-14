@@ -1,0 +1,20 @@
+client secret: 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
+client id:283448143002-0r38n1s5os11k1ks98ui00hgfuub2o50.apps.googleusercontent.com
+
+In https://console.cloud.google.com/
+1)Create scope of the app which we used in our application
+2)Generate client and and Client secret using Credentials
+
+In Postman
+3)Google auth url:https://accounts.google.com/o/oauth2/v2/auth
+4)Google token url: https://oauth2.googleapis.com/token
+5)enter the redirect url: https://oauth.pstmn.io/v1/callback
+6)Enter the scope
+7)Get access token using generate access token
+8)And send the get request
+
+
+
+Self-Definition for O-auth 2.0:
+-send the request to the thirdparty application and get the access token from the respective application
+-then again request with access token and get the protective resource

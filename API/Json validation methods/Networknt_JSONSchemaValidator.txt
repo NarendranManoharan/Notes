@@ -1,0 +1,10 @@
+Using Networknt's JSON Schema Validator:
+
+STeps to validate JSON Schema using Networknt:
+1. Create an instance for Object mapper
+2. Create an instance for Jsonschema factory(Networknt) ->using getinstance pass the schema version
+3. Using the readTree() of Jackson databind, convert the JSON file to JSON Node
+4. using the factory Object, read the schema file ->getschema()
+5. Validate schema against the JSON node using validate function
+6. The return typr of validate function is a set, store the result in that set, if there is any entry in that set 
+   then there are validation errors, if the set is empty there is no errors.

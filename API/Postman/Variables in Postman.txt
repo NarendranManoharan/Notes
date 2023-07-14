@@ -1,0 +1,32 @@
+Global Variables:
+======
+By set the global variable , it can be only used throghout the project 
+-Global variables enable you to access data between collections, requests, test scripts, and environments. 
+-Global variables are available throughout a workspace
+
+Environment variables:
+===============
+-enable you to scope your work to different environments, for example local development versus testing or production
+-One environment can be active at a time
+
+Collection variables:
+================
+-set variable in colection level, so it can be used in that collection only
+-Collection variables are available throughout the requests in a collection and are independent of environments. Collection variables don't change based on the selected environment. 
+-Collection variables are suitable if you're using a single environment, for example for auth or URL details.
+
+
+1)Local Variables:
+These are temporary variables that will only function inside the environment they were created in. When you change the environment, the variable will stop its access, and an error will occur.
+
+2)Collection Variables:
+These are independent of environments and are available for all the requests in a collection.
+
+3)Environment Variables:
+These are the most used variable scope in Postman. At a time, a single environment can be active. They are bound to a specified environment used to execute the request.
+
+4)Global Variables:
+These are independent of environments and function outside the environment. Users are not required to create an environment for global variables. Through global variables, we can access data between collections, test scripts, requests, and environments.
+
+5)Data Variables
+Data variables come from external CSV and JSON files to define data sets that you can use while collections are running through Newman or the Collection Runner.

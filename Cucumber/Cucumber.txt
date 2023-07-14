@@ -1,0 +1,95 @@
+Cucumber project structure
+
+-Feature files (Plain English+Gherkin) (.feature)
+-Step Definition  (Actual Java codes)
+-Runner Class (Link the feature file with runner class) 
+
+-Gherkin keywords (given, when, And, then)
+----------------------------------
+Regular Expressions
+integer - (\\d+)
+Float - (\\d+\\.\\d+)
+String -  \"(.*?)\" (escaping the string)
+----------------------------------
+
+Parametrization --->sending data from feature file
+
+------------------------------------
+Data-driven testing (sending data via table)
+
+1)sending values directly and receiving it via regular expressions
+2) Data table without header
+    |7095 | 7095|
+3) Data tables with header
+    |username | password|
+    |7095 | 7095|
+4) using datatables and examples
+- if using examples keyword scenario outline is recommended not scenario.
+- scenario outline procceds the feature file till the final data in the examples keyword
+
+-------------------------------------------
+
+Cucumber options
+1)features - location of the feature file
+2)glue - corresponding stepdefinition file glue with feature file
+
+3)dry run --->Boolean 
+-it will check only for the mappings without execution)
+-just validate the stepdefinition file with feature file whether all the mappings are present, and it is not execute stepdefinition file 
+
+4)strict  ---> Boolean 
+-it will execute and check for the mappings
+-if any of the step missing, after execution only it will dispaly the error
+
+5)tags
+-> tags={"@tagname"}
+
+With cucumber we can use
+-Tags at feature file level
+-Tags at scenario/scenario outline level
+-Ignore the tests using tags
+-Club different tags and run("and","or")
+
+
+
+6)monochrome - to print console msg into human readable format
+
+
+7){format--deprecated} - report generation
+- Plugin("html:report/Webreport", "json:report/jsonreport.json", "junit:report/xmlreport.xml")
+
+---------------------------------------------------
+Cucumber Hooks: (order of execution)
+
+Only two annotations
+@Before, @After
+prioritize the method with (order=int)
+Import the annotations based on cucumber not from Junit
+---------------------------------------------
+
+Tagged Hooks:
+1) We know @before runs before every scenario and @after runs after every scenario
+2)There will be diff pre requisites before for different scenarios.wat to do?
+
+solution: Customised (tagged) hooks for scenarios
+@Before(@tagname)
+@After(@tagname)
+------------------------------------------
+
+BACKGROUND IN HOOOKS:
+-in order to expose the details/preconditions that has to be executed before the first step of scenario
+-
+
+
+-It performs much like hooks(@before only), whereas hooks have both before and after
+-It is to represent the collective list of pre-conditions for all the scenarios
+-It contains one or more given steps
+
+-In hooks we can have multiple hooks(before,after) for a scenario, but in case of background we can use @before only
+-	We can have only one set of Background steps per feature.
+-In case of multiple background needed, we have write separate feature files.
+
+_background should be before the first scenario
+-If we have both hooks and background, background is run before each scenario, but after any before hooks.
+- Hook have high priority in execution than background
+

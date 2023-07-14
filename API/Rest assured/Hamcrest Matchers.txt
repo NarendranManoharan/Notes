@@ -1,0 +1,13 @@
+Json validation:
+
+Hamcrest Matchers:
+To validate the json response
+
+syntax:
+Validate the String - get("url").then().body("json path", equalTo(value));
+validate the floatvalue- body("data.weight", equalTo(23.7f));
+Validate the response time - time(lessthan(2L), Timeunit.seconds);
+Validate the array entry - body("arrayname", hassize(n));
+validate the array is empty - body("arrayname", empty());
+
+

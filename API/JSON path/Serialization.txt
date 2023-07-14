@@ -1,0 +1,30 @@
+Rest assured:
+
+non_bdd_style:
+==========
+-baseURI
+-RequestSpecification
+-Response
+
+Bdd_style:
+======
+given,when,then (request chaining)
+
+Serialization:
+-is the process of converting a data object into a byte stream, and saving the state of the object to be stored on a disk or transmitted across the network
+
+Deserialization:
+-covert back to original state of data
+
+
+object -> serialization -> Network -> Deserialize -> object
+
+
+Serialization problems:
+-Java code get the key and value parameters from user as java object type
+-But while transfer in network it should be as json type
+-so convert java object into json using libraries like jackson(Databin, Gson etc.., 
+
+To Overcome:
+Use libraris of Jackson
+-it will automatically convert the data into JSON

@@ -1,0 +1,13 @@
+Interview qstns:
+
+1)How to get the request specification properties?
+-SpecificationQuerier.query(requestSpecification)
+
+2)What is the default URI of get request
+-https://localhost:8080
+
+3)How to compare two JSON files:
+- using Jackson databinder
+- Object mapper contains equals methods
+-In josn key order is not imp
+-but array order is important while comapare

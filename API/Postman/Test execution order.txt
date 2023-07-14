@@ -1,0 +1,17 @@
+Pre-request scripts -- Before request
+
+Tests - After request 
+
+Execution order:
+
+-Collection(Before request)
+-Folder
+-Request
+      Req-response
+-Collection (After request)
+-Folder
+-Request
+
+
+Request chaining:
+send the response body parameter to variable of the next request

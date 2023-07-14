@@ -1,0 +1,37 @@
+Steps to "GET" method using java: (using java.net library)
+
+1. Create object for URL class
+2. Open the urlconnection and store it in parent class
+3. Set the Request type 
+4. Connect
+5. Get response code from the connection object and print
+6. Get response message from the connection object and print
+7. read the response using inputstream
+8. Create an Input Stream reader for reading the response body
+9. Create buffered reader and pass the Input Stream reader
+10. Read the line the response body using readline()
+11. So how long dow we read the lines
+    Till the lines are available in the response
+    So loop the read line action using while
+12. Create StringBuffer and append the lines inside the loop
+13. Finally priont the buffer
+
+
+Steps to "POST" method using java:
+
+1.Create object for URL class
+2.open the url connection and store it in parent class
+3. Set the Request type, request property(content type as application/json) and setDoOutput true
+4.Save the String from the post body
+   {"name":"naren","salary":"52500","age":"21"}
+5.And write this post body to output stream
+6. Get response message from the connection object and print
+7. read the response using inputstream
+8. Create an Input Stream reader for reading the response body
+9. Create buffered reader and pass the Input Stream reader
+10. Read the line the response body using readline()
+11. So how long dow we read the lines
+    Till the lines are available in the response
+    So loop the read line action using while
+12. Create StringBuffer and append the lines inside the loop
+13. Finally priont the buffer

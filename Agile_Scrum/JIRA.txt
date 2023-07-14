@@ -1,0 +1,39 @@
+JIRA---
+
+1)EPIC
+-In agile epic is a greater functionality which can be subdivided into further granular units to be actually implemented
+
+
+2)Story(requirement)
+-An user Story is an agile development term which describe product feature from end user prespective
+
+
+How to write a story:
+A good story captures the "who", "what" anf "why" of a feature in a simple and concise way
+ 
+As a [type of user]
+I want to [perform some task] 
+so that I can [acheive some goal]
+
+
+
+3)Acceptance criteria
+-After completion of the task have to measure that the task is actually completed or not.
+-Acceptance criteria determines the completetion of task by having a BDD style feature description
+
+How to write an acceptance criteria:
+An acceptance criteria should have the precondition(Given), action to be performed(when) and the consequence of the action (Then)
+
+Given [some context]
+When[action to be performed]
+Then[consequence of the action]
+
+4)Product backlog
+
+5)Sprint backlog--after the sprint planning process, which is a subset of product backlog
+
+6)Story points
+-represents the efforts required to put  a Product backlog item live
+
+7)Mock up
+-visual way of representing a product

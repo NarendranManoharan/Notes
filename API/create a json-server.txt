@@ -1,0 +1,8 @@
+Creating json server
+
+-npm install -g json-server
+-json-server --watch db.json (or) npx json-server --watch db.json
+
+
+
+db.json - that contains json data
