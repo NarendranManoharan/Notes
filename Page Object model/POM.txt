@@ -1,0 +1,28 @@
+POM-Page Object model
+-UI properties are not constant it can be change at anytime
+-so seperate the finding methodology in different class
+
+
+1)Loginobjects.username(driver).sendkey("123");
+
+  -passing the driver as the argument
+  -add the return statement in the method, so only it can return the found webelement
+  
+  
+2)Page object model in selenium has PageFactory class
+  -without using FindElement
+  
+   -using @FindBy(name="username")
+   -PageFactory.initelements(driver, Login.class)
+ 
+ 
+ 3)PageFactory without @FindBy
+    -directly find the element and store it in webelement\
+	
+	public static Webelement txtusername;
+	
+	username.sendkeys("ABC");
+	
+	PageFactory.initelements(driver, Login.class)
+	
+Note: Element must be static while using Pagefactory

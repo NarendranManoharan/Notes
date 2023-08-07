@@ -1,0 +1,73 @@
+TestNG
+-@Test
+
+1)Controlling the order of execution
+ set the priority keyword inside the @Test annotation
+ @Test(priority=0)
+ 
+2)how to skip a testcase
+  set enable=false
+  
+3)Handling dependencies in testNG
+   using (dependsonmethods="methodname")
+   
+4)How to write test suites in TestNG
+    Suite-collection of test cases @beforeSuite @AfterSuite
+	
+5)test suite using xml
+   suite
+     test 
+	  classes
+	        class1->packagename.classname (fully qualified classname)
+		class2->packagename.classname (fully qualified classname)
+		class3->packagename.classname (fully qualified classname)
+	  classes
+      test
+    suite
+	
+
+ -testNg report fie ->index.html under test-output folder
+ -verbose=2 ->level of indication log details
+ 
+6)How to group test cases
+ - given the group annotation on the methods
+ -call the methods in xml file using group, run ,include/exclude tag
+ 
+  @Test(groups={"Apple"}}
+     suite
+       test 
+	     group  
+		   run
+		    include 
+			exclude
+			
+
+7)Parametrization in TestNG
+  @parameter("name")
+ <parameter name=" " value=" ">
+ 
+8)How to do parallel testing 
+  add parallel tag in suite
+  parallel="methods" thread-count=2
+  
+
+9)Assertion (use for unit testing purpose)
+  -Assert.assertequals(actual , expected)
+  -assertnotequals
+  -asserttrue
+  -assertfalse
+ 
+10)Annotations order of execution
+ @Before suite
+   @Before test
+    @before class
+	 @Before method
+	   @test
+	 @After method
+	@Afterclass
+   @AfterTest
+  @AfterSuite
+	
+11)Listeners
+   -implement the ItestListener to the class and implement the unimplemneted methods
+   -use the listerner tag in xml file and mention class that listener need to listen

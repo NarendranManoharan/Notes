@@ -1,0 +1,55 @@
+Jenkins installation
+
+-Install the jenkins as .war
+-use the command to run the .war file
+  java -jar jarname.war
+
+Username: Narendran
+Password: Naren@123
+http://localhost:8080/
+
+
+1) How to configure the basic java project in Jenkins
+
+-add the jdk path in dashboard>Manage Jenkins>Tools
+-Create a new prohect in jenkins
+-click the build Now in the created Project
+-Workspace generated in the local folder
+-add the java file in that workspace folder
+-configure the run command 
+   {javac Helloworld.java
+    java Helloworld
+   }
+-now click on the build now
+
+=========================================================
+2)How to periodically schedule the build run in Jenkins?
+ 
+Configure>Build Triggers>Build Periodically
+
+Schedule--> * * * * * (minute hour day month day(week))
+
+============================================================
+3)How to run a build using upstream project?
+-Configure>Build Triggers>Build after other projects are build
+-set the parent project name
+
+=============================================================
+4)Build when Git commit is happening
+-whenever the push operation is happening in Github, the jenkins job should get triggered
+
+Steps:
+1. Git plugin for jenkins
+2. A project in Github
+3. NGROK -> Tunneling tool (ngrok http 8080)
+To expose our locahost to internet so that Github and Jenkins can communicate
+
+============================================================
+5) How to send the email notification from Jenkins (Default email notification plugin in jenkins)
+
+-Set the email in Post build actions under the chosen project
+-set the email server notification under Dashboard>Manage Jenkins>System>email notification
+================================================================
+
+6)
+

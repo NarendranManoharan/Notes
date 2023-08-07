@@ -1,0 +1,64 @@
+must know Java concepts
+
+1)DB connection
+-which database (mysql, PLsql, etc.,)
+-create connection
+-ceate statement
+-executeQuery
+-store it in resultSet
+
+
+2)FileWriting
+-FileWriter =>straight forward, interaction with file, less performance
+-BufferedWriter =>Easiest way, performance wise better and wisely used
+-FileOutputStream => For writing raw byte array information(eg.images)
+-Path => this also writes byte array
+
+1)FileWriter - directly interact with file, so less in performance , costly operation
+-create object
+-write method
+-close
+
+2)Buffered Writer - temporary storage ,performance wise best
+
+-create object for FileWriter
+-Create object for buffered writer
+-write method
+-close
+
+3)FileOutputStream - write as raw bytes
+
+-change the content into byte array
+
+4)Path 
+Path path=Paths.get(location)
+Files.write(location, content.getbytes)
+===============================================
+
+1)FilReader
+
+-FileReader object
+-BufferedReader object
+-reader.readline
+
+==============================================
+FileInputStream
+Properties properties=new Properties()
+properties.load()
+properties.get(key)
+========================================
+Json - Network data Transmission
+pre requisite: Json-simple dependencies
+
+-Jsonobject
+-add the data as key value pair and using put()
+-If JSON array is needed, create the json array and add elements into it
+=========================================
+
+Json Read:
+-filereader
+-Parse the jsonfile
+-convert the object into jsonobject
+-get the key using get()
+
+

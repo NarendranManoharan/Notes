@@ -1,0 +1,73 @@
+Java programs:
+1)How to reverse a String?
+ 
+ Solution:
+  1. Using String buffer/reader
+  2. Our own logic
+  3. Using collections
+ 
+2)How to swap two numbers?
+ 
+ Solution:
+ a)withThirdVariable
+    a=b
+	b=c
+	c=a
+ b)withoutThirdvariable
+     first=first+second
+	 second=first-second
+	 first=second-first
+	 
+3)How to reverse a integer?
+
+   reversedNumber=reversednumber*10;
+   reversedNumber=reversedNumber+givennumber%10
+   givennumber=givennumber/10
+   
+Note: If get the input from user, Use Scanner class
+
+4)Print triangle pattern
+
+    using nested for loop
+	inner for loop print statement doesnt contains "ln"
+	
+	
+5)How to find the length of the string without using length()?
+       int length = 0;
+         for(char nameArray:character){
+        	 length++;
+         }
+		 
+6)How to find the smallest number in the Array?
+    1. using For loop
+	2. using Arrays.sort() function
+	3. using Collections.sort() function
+
+7)How to Reverse thw words?
+   for (int i = identitySplit.length-1; i >=0; i--) {
+			
+			System.out.print(identitySplit[i]+" ");
+		}
+		
+8)How to find element in the given Array?
+ Boolean found=false;
+		
+		for (int number : array) {
+			if(number==numberToFind) {
+				found=true;
+			}
+		}
+ 
+ 
+9) How to find the position of the english Alphabet?
+
+  char givenchar=Character.toLowerCase(usergivenchar);
+		int position=givenchar-96;	
+		System.out.println(position);
+
+10)palindrome program
+    while(n>0){    
+   r=n%10;  //getting remainder  
+   sum=(sum*10)+r;    
+   n=n/10;    
+  }    
