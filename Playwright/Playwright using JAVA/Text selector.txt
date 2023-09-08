@@ -1,0 +1,29 @@
+Playwright Selectors:
+===================
+1.Text Selector
+
+1)get the text:
+
+   page.Locator("text=value");
+   
+  -if its a single value it will click on that
+  -if its multiple value, cosole error displays "strict mode voilation" becaus the locator having multiple values
+  -To overcome: use first() or last()
+  
+  
+  
+2)get the text using tagname:
+ 
+    page.locator("h2:has-text('value')")
+
+3)get the text using parent-child tags:
+
+   page.locator("div.classvalue h2:has-text('value')");
+   
+4)get the text witgout using "text"
+    
+	page.locator("'value'");
+Note: page.locator("text=value")  is equivalent to page.locator("'value'");
+
+
+How to validate the locators?

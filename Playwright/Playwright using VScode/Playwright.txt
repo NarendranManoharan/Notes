@@ -1,0 +1,21 @@
+Playwright:
+-Framework used for web automation testing
+-Applications: Web browser apps| Mobile web apps| API
+-Browsers: Chromium,Firefox,edge (Headless and headed)
+
+Features:
+-Functional | API testing | Accessibility testing
+-Builtin reporters | Custom reporters
+-CI/CD support
+-Recording | Debugging | Explore selectors
+-Parallel testing
+-Auto wait
+-Built-in Assertions | Less Flaky tests
+-Test retry, logs, Screenshots, videos
+-multi-tab and multi-window
+-Frames | Shadow DOM
+-Emulate mobile devices, geolocations
+-Test parametrization
+-Fast
+
+

@@ -1,0 +1,32 @@
+Locating elements in Playwright:
+-----------------
+Property
+CSS
+Xpath
+
+1)Locate single Webelement in playwright:
+----------------------
+await page.locator('locator').click();
+await page.click('locator');
+
+inputbox
+---------
+
+await page.locator('locator').fill('input');
+await page.locator('locator').type('input');
+await page.fill('locator' , textvalue)
+await page.type('locator' , textvalue)
+
+
+2)Locate multiple Webelements:
+-----------------------
+await page.$$(Locator)
+
+for eachloop:
+ for(const link of links){
+     await page.$$(Locator)
+ }
+ 
+3)wait statement:
+----------------------
+page.waitforSelector('locator')

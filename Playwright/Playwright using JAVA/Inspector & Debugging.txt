@@ -1,0 +1,33 @@
+Inspector (Code generator) & debugging:
+================================
+Pre requisite: mvn installed in system
+
+Step 1: Navigate to the respective path in CLI
+
+Step 2: copy the codegen command from playwright page:
+ ======>> mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="codegen demo.playwright.dev/todomvc"
+ - have to pass the url inside the command
+
+Step 3: once the url open code cn automatically generated for each and every action performed
+
+Step 4: Stop the recording and get the code from codegen
+
+
+
+Debugging: (record & play)
+===============
+Step 1: Pass the env variable PWDEBUG=1, then the code debug line by line
+To add environment variable
+ Runas>Run config>envirnment>PWDEBUG=1
+ 
+Another way
+-while debugging we can add futher steps bu using record option
+
+page.pause(); -->used as breakpoint. from here the debugging starts
+
+
+
+
+ 
+ 
+ 

@@ -1,0 +1,19 @@
+Cypress:
+-frontend web automation testing tool
+-developed for modern web app
+-langugae: JavaScript,Typescript
+-doesnt use any selenium libraries
+-opensource (Test Runner, Dashboard)
+-Node.js environment comes with npm module
+
+Who can use cypress (Dev & QA)
+-End-to-End test cases
+-Integration tests
+-Unit test cases
+-API testing
+
+Features :
+1)Time Travel 
+2)Debuggability
+3)Built-in waits
+4)

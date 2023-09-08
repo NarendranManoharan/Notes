@@ -1,0 +1,21 @@
+Installation:
+1)node.js
+2)VS code
+3)Create project folder --> Open in VS code
+4)Install Playwright using terminal
+   npm init playwright@latest
+   
+ pacakage.json --- node project management file
+ playwright.config.js --- playwright specific config file
+ tests ---  we can create all the playwright tests
+ 
+ npm playwright -v -- version of installed playwright
+ 
+5)Install playwright using vs code extension
+
+
+run the playwright testing
+-------
+npx playwright test (by default it will run on headles mode)
+npx playwright test --headed
+npx playwright show-report 

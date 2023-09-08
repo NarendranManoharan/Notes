@@ -1,0 +1,11 @@
+
+Trace viewer:
+=============
+Context.tracing().start(new Tracing.startoptions().setscreenshots(true).setsnapshots(false));
+Context.tracing().stop(new Tracing.stopoptions().setpath(Paths.get("trace.zip")));
+
+Browser context:(multiple browser window)
+==============
+-use multiple browser window and use to test with multiple users
+-always open with incognito mode
+-not store any cookies and cache

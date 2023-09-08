@@ -1,0 +1,32 @@
+Locator:
+
+//single element
+page.locator("text = Cart");
+login.click();
+
+Note:
+-In selenium if there is multiple webelement present for given locator, it will fetch the first one.
+-But in playwright it will give error.
+
+To overcome:
+-use First() or last()
+
+
+
+//multiple elements
+
+for (int i = 0; i < count; i++) {
+			
+			String content=login.nth(i).textContent();
+			System.out.println(content);
+		}
+
+By using allTextContents Wrapper class:
+======================	
+ List<String> listofvalues=login.allTextContents();
+		 
+		 for (String a : listofvalues) 
+		 { 
+		 System.out.println(a); 
+		 }
+		 

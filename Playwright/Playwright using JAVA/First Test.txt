@@ -1,0 +1,21 @@
+Step 1: Copy the playwright depenencies
+Step 2: Download the binaries by running the code
+
+
+Code description:
+==========
+Step 1: Create the playwright server 
+     --->Playwright playwright=Playwright.create();
+	 
+Step 2: Craete the lanuchoptions:
+
+    LaunchOptions launchOptions=new LaunchOptions();
+		  launchOptions.setHeadless(false);      ------set the browser headlesss/headed
+		  launchOptions.setChannel("chrome");    -------set the browser type
+		  
+Step 3: Launch the browser:
+          Browser browser=playwright.chromium().launch(launchOptions);
+
+Step 4: Create newContext and newPage:
+           BrowserContext context=browser.newContext();
+		   Page page=context.newPage();

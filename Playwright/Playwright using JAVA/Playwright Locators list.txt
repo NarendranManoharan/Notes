@@ -1,0 +1,27 @@
+=====Playwright Selectors===========
+1.Text Selector
+2.Frame Selector
+3.Selecting elements in Shadow DOM
+4.Selecting visible elements
+
+5.Selecting elements that contains other elements
+ 
+     playwright.$("div.navFooterLinkCol:has(a[href='https://www.amazon.science'])")
+   
+6.Selecting elements matching one of the conditions
+         -Comma seperated CSS list
+		      playwright.$$("span:has-text('cart'), span:has-text('Sign in'), span:has-text('Mothers')")
+		 -Xpath Union
+		       playwright.$$("//span[@class='nav-line-2'] | //div[@id='nav-cart-text-container']")
+		 
+7.Selecting elements based on layout
+  
+8.Relative CSS_Selector
+
+9.find nth element
+    playwright.$("span[class='nav_line'] >> nth=1")
+	
+	
+10.Xpath in playwright
+
+11)Webtable handling in playwright
