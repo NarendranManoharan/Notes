@@ -1,0 +1,45 @@
+String name="Narendran";
+
+char[] arrayname=name.tocharArray[];
+int count=0;
+for(int i=arrayname.size-1; i<=0; i--){
+system.out(arrayname[i]);
+
+for(char string: arrayname){
+   if(string==array[i]{
+   count++
+}
+
+if(arrayname[i]==){
+count++
+}
+}
+
+
+
+
+Takescreenshot screenshot=(Takescreenshot)driver;
+File srcfile=screenshot.getscreenshotas(Output.File);
+
+Javascriptececutor executor=()driver;
+executor.executescript(document.findelement.click());
+
+Action action=new Action(driver)
+action.move
+
+
+Jman, 123
+
+list<Object> list=new Arraylist<Object>;
+list.add("Jman");
+list.add(123);
+
+
+FileInppustream excel=New FileInppustream(filelocation)
+XssfWorkbook workbook=new XssfWorkbook(excel);
+XssfSheet sheet=workbook.getsheetat(0):
+
+Roe(Iterator> rowcounyt=sheet.iterator();
+
+  while(rowcount.hasnext()){
+     roucount.next()
