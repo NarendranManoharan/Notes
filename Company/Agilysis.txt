@@ -1,0 +1,4 @@
+-Bug life cycle (Developers commends for rejection)
+-System integration testing
+-SQL Commands for maximum number
+-Collections concept
