@@ -71,6 +71,3 @@ Scrum values:
 -committment
 -Respect
 -Openness
-
-newly added
-
