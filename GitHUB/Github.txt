@@ -35,6 +35,9 @@ Topic 3: Fork
 1)when the third person wants to changes in your repository, they dont have the access to edit
 2)So they fork the master code to their local repository and made the changes then pull request
 3)author need to aacept/decline the pull request
+
+difference between fork and branch:
+-fork is a complete copy of the repository, whereas branch is a divergent path creates within the same repoitory
 ----------------------------------
 
 Topic 4: Merge Conflict
@@ -62,7 +65,6 @@ Upload a project from eclipse to github:
 3.In eclipse team>shareproject>add to index>commit and push ---move the local file to github
 4.copy the url in git and paste in selenium and submit
 ---------------------------------------
-
 
 Topic 7: clone the code from Github to eclipse
 

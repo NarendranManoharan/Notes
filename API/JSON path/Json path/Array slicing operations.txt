@@ -1,0 +1,13 @@
+Array slicing operations:
+1) [start:end] start index incuded and end index excluded 
+2)start value and end value is optional
+3)if start value is not given it will set default as 0.
+4)if the end value is not provided, the last element will be default(based on array length)
+5)Negative numbers iterate from the end of the array
+6)If the starting and ending number is same it will return the empty list
+7)It supports left to right reading
+8)If start element is greater than arraylength , empty array is returned
+9)if end element id greater than array length, slicing happens until the end of the array
+10)read the value from left to right
+    valid   [-2:2]
+    invalid [2:-2]

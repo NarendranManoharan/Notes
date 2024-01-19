@@ -1,0 +1,24 @@
+JSON path with jAVA:
+
+1)This method parse the jsonfile each and every time while we read:
+
+File jsonfile=new File("src/test/resources/bookstore.json");
+		List<Object> pricelist= JsonPath.read(jsonfile, "$.store.book[?(@.price<10)]");
+
+2)But this method parse only one time
+
+ Object parsedDoc=Configuration.defaultConfiguration().jsonProvider().parse(jsonfile.readAllBytes());
+		
+		List<Object> titlelist=JsonPath.read(parsedDoc, "$..title");
+		
+3)JSONpath using Fluent API:
+
+  	DocumentContext context=JsonPath.parse(jsonfile);
+	    List<Object> authorlist=context.read("$..author");
+		
+4)fluebt API using default configurator:
+
+    configurator.defaultConfigurator()
+	JsonPath.using(configfile).parse(filename).read(expression)
+   
+

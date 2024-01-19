@@ -1,0 +1,33 @@
+Problem statement:
+-we alraedy convert our java data into Json using using Jackson libraries, then why this pojo
+
+Explanation:
+-in that example we use map and list for hardcoded thge data but in orginal we user getters ans setters to set the data in variable
+-so now convert the variables into Json
+-For that we need to print the Java object, because all the variables present in object only
+-we cant the print the object directly, java wont allow
+
+To overcome:
+-For that we use ObjectMapper class in Jackson databinder
+-By using the ObjectMapper we can print the java object
+
+ex:
+ObjectMapper mapper=new ObjectMapper();
+	    
+	   String EmployeeAsJson=mapper.writerWithDefaultPrettyPrinter().writeValueAsString(employee1);
+	    System.out.println(EmployeeAsJson);
+
+
+
+POJO - Plain old Java object
+
+-Get all the values from UI and store the data in Java object
+-Convert the POJO object into JSON
+-Already we serialize the MAP and List data using Jackson libraries
+
+Problem statement: How to convert the POJO into JSON / How to serialize POJO?
+-Using ObjectMapper
+-using writewithDefaultPrettyPrinter() ->for human raedable format
+-using writevalueasString() ->write the pojo object as string
+
+

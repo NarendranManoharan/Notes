@@ -47,10 +47,13 @@ Cucumber options
 With cucumber we can use
 -Tags at feature file level
 -Tags at scenario/scenario outline level
--Ignore the tests using tags
+-Ignore the tests using tags ~
 -Club different tags and run("and","or")
+-ex:OR {"@Somketest,@Regressiontest"} ->executes whether one of the tag present in top of scenario
+-ex:AND {"@Smoketest","@Regressiontest"} ->execute only bith the tag present in single scenario
 
-
+tags={"@TaggedHooks,@tag","~@second"}
+Simple def: put a separate quotes for exclusion tags
 
 6)monochrome - to print console msg into human readable format
 

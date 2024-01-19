@@ -1,4 +1,4 @@
-1)Hardcoded all the values in the class and call the using testng xml file
+ 1)Hardcoded all the values in the class and call the using testng xml file
  <test>
     <classes>
 	   <class1="testcase1">

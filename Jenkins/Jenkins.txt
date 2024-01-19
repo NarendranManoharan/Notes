@@ -12,7 +12,7 @@ http://localhost:8080/
 1) How to configure the basic java project in Jenkins
 
 -add the jdk path in dashboard>Manage Jenkins>Tools
--Create a new prohect in jenkins
+-Create a new project in jenkins
 -click the build Now in the created Project
 -Workspace generated in the local folder
 -add the java file in that workspace folder
@@ -51,5 +51,7 @@ To expose our locahost to internet so that Github and Jenkins can communicate
 -set the email server notification under Dashboard>Manage Jenkins>System>email notification
 ================================================================
 
-6)
+6)Jenkins Pipeline
+-Install delivery pipeline plugin
+ 
 

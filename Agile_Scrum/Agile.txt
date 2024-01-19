@@ -1,4 +1,27 @@
-Agile vs waterfall
+Types of SDLC methods:
+1.Waterfall
+2.Spiral
+3.V model
+4.Agile
+etc.,
+
+Waterfall:
+ -Requirement
+  -Analysis
+   -Design
+    -Implementation
+     -Testing
+      -Deployment
+       -Maintenance
+
+Waterfall- can either be a huge success or huge failure
+Drawbacks:
+-requirements must be clear and stable
+-Testing comes lates
+-documentation timing
+-Chances of correcting the error very minimal, chances of error are high
+===========================
+Agile - adapt the changes
 
 agile misconsumptions
 -agile is fast
@@ -12,7 +35,7 @@ Frameworks
 -SAFe
 
 
-SCRUM
+SCRUM (iterative and incremental)
 
 -Scrum is framework used in agile methodology to develop the project
 -Scrum is a iterative and incremental process
@@ -20,13 +43,13 @@ SCRUM
 
 Scrum roles:
 -Developers(Team)
--Product owner
+-Product owner (on behalf of customer)
 -Scrum master
 
 
 _backlog - Pending task(product backlog/sprint backlog)
 _Sprint planning- Discussion b/w product owner and team about take set of requirement and complete with in set of mandays
-_Standup/Scrum meeting - what we have done yesterday and what to do today and anu showstopers
+_Standup/Scrum meeting - what we have done yesterday and what to do today and any showstopers
 _Sprint review - product review
 _Sprint Retrospective - review on team members how they perform in task
 
@@ -44,7 +67,7 @@ Team:
 - Team is accountable as a whole (No blame game on a single person)
 - Usually 7 to 10 persons
 
-Scrum: (Agile, Scrum coach)
+Scrum master: (Agile, Scrum coach)
 - Helps team to adopt scrum and self organise
 - Protects the team from outside interference
 - Conducts scrums events
@@ -71,6 +94,4 @@ Scrum values:
 -committment
 -Respect
 -Openness
-
-newly added
 

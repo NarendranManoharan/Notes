@@ -1,0 +1,10 @@
+Serialization using Lombok:
+-paste the lombok dependencies in pom.xml file
+-Install the lombok in eclipse
+-use @Getter , @Setter annotation in class level
+
+problem statement?
+if the code having more than 500 variables it is possible to generate getters and setters for that? It makes code clumsy
+
+Solution:
+-Lombok used to eliminate all the Boiler plate codes(getters and setters) and generate automatically using @Getter and @Setter methos
