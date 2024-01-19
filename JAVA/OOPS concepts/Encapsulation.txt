@@ -1,0 +1,17 @@
+
+Encapsulation
+- process of binding data and methods together into a single unit {class}
+-encapsulation means enclosing thedata in a container. It is done to hide the details and it is acheived by the help of 
+ access modifiers like public, protected and private
+
+ex: Page Object model
+- In POM the webelement can find and declared in private so that it can hide within the class
+- to use the webelement from other class we can create method with public access and logging the webelement
+- So that we can acheive encapsulation
+
+
+Access modifiers:
+1.default - access only within the package, when no access modifiers is specified , java consider itself as a default modifiers
+2.private - only within the class in which they are declared
+3.protected - within the same package/sub classes(child class) in different package
+4.public - from everywhere in the program.

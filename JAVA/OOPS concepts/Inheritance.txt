@@ -1,0 +1,10 @@
+Inheritance
+-----
+Process of acquirng the properties(data+methods{functions})
+
+Types:
+single : a->b
+multi-level: A->B->C
+Multiple :(Not supported in java) A+B->c (to overcome we use interface)
+hierarchical : A->B, A->C, A->D
+

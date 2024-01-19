@@ -6,7 +6,7 @@ Static Keyword
 - we can call static method from non static method but vice versa not allowed
 
 Static block
--class can have multiple static blocks
+- class can have multiple static blocks
 - gets execute when the class is loaded in memory
 - static block have high priority than main method in execution
 
