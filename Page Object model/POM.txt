@@ -1,4 +1,4 @@
-POM-Page Object model
+POM-Page Object model -design pattern
 -UI properties are not constant it can be change at anytime
 -so seperate the finding methodology in different class
 

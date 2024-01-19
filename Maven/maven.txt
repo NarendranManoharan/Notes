@@ -1,4 +1,4 @@
-Maven- build automation tool(intenet based)   ---refer maven official website
+Maven- build automation tool(internet based)   ---refer maven official website
 WHY Maven-
 
 
@@ -72,7 +72,7 @@ site (for documentation)
 
 -Default (Validate,compile,test,verify,install,deploy)
 -clean
--site
+-site (create a new site folder under target)
 
 Phases: lifecycle comprises of several phases
 
@@ -80,6 +80,6 @@ validate- validate whether the artifact id missing (for ex)
 compile- compile the source code (converion of .java to .cls)
 test- test does not need to package or deploy
 package- take the compiled code and package in its distributable format such as JAR
-Verify
+Verify - run any checks on result of integration
 Install - install the package(JAR file) into the local repository(.m2)
 deploy - copies the final package to the remote repository for sharing with other developers and projects

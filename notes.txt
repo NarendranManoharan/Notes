@@ -1,0 +1,14 @@
+extended report 
+system.setproperty
+
+
+int--primitive data type
+Integer-- Wrapper class
+
+
+basic java logical programs
+star pattern programs in java
+getter , setter
+tostring()
+for each loop
+thread concepts (synchronize)

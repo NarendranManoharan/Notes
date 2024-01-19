@@ -75,7 +75,7 @@ STLC
 10) Bug Lifecycle
 
  findBug -> new/Open -> Assigned to DEV ->validate the bug whether itis valid or not 
- ->In progress ->fix ->tetsing
+ ->In progress ->fix ->testing
  
 11)severity vs Priority
 

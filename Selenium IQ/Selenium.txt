@@ -1,0 +1,39 @@
+What is Automation testing(platform, language, browser independent)
+-it is a software testing that involves automated test scripts use an automation tool
+
+When
+- when the application is stable and frequent changes in the application are not anticipated.
+
+2)What to automate?
+-critical functionality 
+-Test cases that require repeated test execution
+-Tests that are time-consuming
+-Test cases that require parallel execution
+
+3)What not to Automate?
+-UI test cases
+-Usability test cases
+-Functionalities that are rarely used and take time for scripting
+-Exploratory testing
+
+
+
+Selenium
+-open-source test automation suite used for automating web-based applications
+-supports automation across different browsers, platforms, and programming languages.
+
+Components of Selenium Suite:
+-Selenium IDE -record and playback automation tool
+-Selenium RC - deprectaed
+-Selenium Webdriver -
+-Selenium Grid -helps in the distributed running of Selenium tests in parallel across multiple remote machines.
+
+Limitations of Selenium:
+-Does not support desktop application
+-webservices (REST/SOAP)cannot be automated
+-logging, reading/writing files rely on external libraries
+
+
+Architecture of Selenium 4:
+
+Selenium Client libraries -> W3C protocol -> Browser Drivers ->Browser 

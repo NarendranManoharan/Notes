@@ -56,8 +56,11 @@ Rerun the test cases in TestNG
 -----------------------------
 Assertion vs Verification(soft assertion)
 
--Assertion /hard assertion(stops once the assertion fails)
--verify /soft assertion ---> execute the steps even the assertion condition fails
+-Assertion /hard assertion(stops once the assertion fails)                          Assert.assertequals();
+-verify /soft assertion ---> execute the steps even the assertion condition fails   
+
+ SoftAssert assert=new Softassert();
+  assert.fail();
 
 ------------------------------
 TestNG annotations and their heirarchy
@@ -66,10 +69,20 @@ how to run test case multiple times without using looping:-  invocation count
 ----------------------
 Exception handling in TestNG:- (expectedexceptions)
 ------------------------
+
+How to give timeouts  to a testcase in TESTNG: 
+@Test(timeout=2000)
+--------------------------
 How to execute dependent testcases if the master test case fails:- alwaysrun=true
 ---------------
-How to download the browser drivers automatically:- WebDriverManager.chromedriver().setup()
+How to download the browser drivers automatically:
+WebDriverManager.chromedriver().setup() ->this will download and setup the chrome driver automatically
+-webdriverManager Dependencies-
 ----------------
 How to hit the url without get and navigate
 JavasrciptExcecutor---  window.location='https://www.google.com'
 ------------------
+Switch to active element
+-driver.switchti().activeElement().sendkeys(" ");
+-Paget factory type using Without @findby
+-------------------

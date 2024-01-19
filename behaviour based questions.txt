@@ -1,0 +1,33 @@
+1)suppose found a bug in production , how to make that the bug is not produced again
+-add regression test case
+
+
+2)what to do when dev denies the reported bug
+-provide BS to support why the existing functionallity is as per design
+-Involve PO/BA for discussion
+
+if bug is not reproducible then,
+-Provide screenshot of the bugs, give the timestamp when the bug is reproduced this, so dev can check with application logs
+-Provide test data that you used for replicating issue
+
+3)what has been your greatest challenges while doing regression testing?
+- Test data issue
+- Improper selection of regression test cases might skip a major regression defect to be found
+
+4)Challenges facing in Software testing
+-Data issues
+-Environment available
+-Using right set of tools
+
+5)what are diff level of testing
+-Unit, Integration, System, Acceptance
+
+6)What is your approach when you have high priority release to be delivered in a very short time
+-Run automation test suites
+-Manual testing on high level priority test cases
+
+7)what is test plan?
+-it consists of scop, approach, resources, and outline of the testing projects 
+
+8)sudden change in a project in its deadline?
+-

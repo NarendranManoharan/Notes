@@ -71,3 +71,11 @@ Note: If get the input from user, Use Scanner class
    sum=(sum*10)+r;    
    n=n/10;    
   }    
+
+
+
+ASCII Value:
+
+0-9: 48-57
+A-Z: 65-90
+a-z: 97-122

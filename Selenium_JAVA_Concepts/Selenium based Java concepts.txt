@@ -42,6 +42,8 @@ Files.write(location, content.getbytes)
 -reader.readline
 
 ==============================================
+2)Config.properties
+
 FileInputStream
 Properties properties=new Properties()
 properties.load()

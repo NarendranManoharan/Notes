@@ -1,0 +1,55 @@
+1)Why Selenium Automation tool
+-Open source platform free to use. This method does not need to allot budget
+-Works with multiple system windows, linux, mac
+-It allows cross-browser testing , Supports all programming language
+-Selenium Grid concept allows parallel execution
+
+2)Soft assertion - Soft assertion not throw an exception when assert fails, it continue with the next step
+Hard assertion - Hard assertion throws an Assert exception immediately when an assert condition fails and test suite continue with next @Test
+
+3)Static methods and variables
+-The methods or variables defined as static are shared among all the objects of the class
+-The static keyword is the part of the class not for objects
+- ststic varible are store in class area, and we do not need to create object to access such variables
+
+4)this and super
+this
+- this is the keyword refers to the current class local variable
+- this keyword is used to initialize class level variables in the constructor using local variables
+- this keyword only used within the constructor (so that it can initilaize the constructor values once the object is created)
+
+super (when there is confict in the name between super and child class)
+- super refer to the immediate parent class reference variable
+- super keyword can also be used to invoke parent class method and parent class constructor
+
+5)Difference between Array and ArrayList
+Array is a fixed length data structure 
+Arraylist is a variable length collection class
+-in array the length is defined while created whereas arraylist we can add the length to n number on runtime
+
+6)Hashmap and  HashTable
+Hashmap is non synchronized. It is not thread-safe 
+HashTable is synchronized. It is thread-safe can be share with many threads
+Hashmap allows one null key and multiple null values
+HashTable doesnt allow any null key or value
+
+7)Final, finally and finalize
+Final - keyword 
+- Final keyword is used to apply restrictions on class, method and variables
+- Final clas cannot be inherited
+-Final method cannot be overridden
+-Final variable cannot be changed
+
+Finally - block
+-is used to place important code,it will be executed whether the exception is handled or not
+
+Finalize - method
+-is used to perform clean up processing just before object is garbage collected
+finalize(); system.gc();
+
+
+8)When should i use selenium Grid?
+- whenever execute the test on different platforms(parallel testing)
+
+
+

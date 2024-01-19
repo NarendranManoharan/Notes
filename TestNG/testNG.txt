@@ -1,4 +1,9 @@
-TestNG
+TestNG - organize test cases
+TestNG is an open-source test automation framework for Java
+parallel test execution, test dependency management, 
+flexible test configuration, 
+data-driven testing, and comprehensive reporting.
+
 -@Test
 
 1)Controlling the order of execution
@@ -31,7 +36,7 @@ TestNG
  
 6)How to group test cases
  - given the group annotation on the methods
- -call the methods in xml file using group, run ,include/exclude tag
+ - call the methods in xml file using group, run ,include/exclude tag
  
   @Test(groups={"Apple"}}
      suite
@@ -49,7 +54,7 @@ TestNG
 8)How to do parallel testing 
   add parallel tag in suite
   parallel="methods" thread-count=2
-  
+  The TestNG has a default value of thread = 5 for parallel testing
 
 9)Assertion (use for unit testing purpose)
   -Assert.assertequals(actual , expected)

@@ -7,7 +7,7 @@ Implicit wait:
 syntax: driver.manage().timeouts().implicitwait(30, timeunits.second);
 
 pros:
--which is better when ompare to thread.sleep
+-which is better when compare to thread.sleep
 - if mention it in the first line it can be applicable to all the elements in the code till driver.quit
 - wait till the element is present in DOM
 
@@ -33,6 +33,9 @@ how it is better from implicit wait:
 -but in E.W we can handle more predefined conditions
 
 if there is network issue/apllication running slow we can go for I.W
+
+WebDriverWait driverWait=new WebDriverWait(driver, java.time.Duration.ofSeconds(2000));
+		driverWait.until(ExpectedConditions.elementToBeClickable(null));
 
 POLLING--> 0, 0.5, 1, 1.5, 2 (Request inititaed for every 0.5 second)
 --------------------------------
