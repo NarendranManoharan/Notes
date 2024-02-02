@@ -1,0 +1,60 @@
+1)git --version
+2)git config --global user.name "Narendran Manoharan"
+mkdir project
+cd project
+3)git init
+
+add the file in the folder
+
+4) git status
+Files in your Git repository folder can be in one of 2 states:
+Tracked - files that Git knows about and are added to the repository
+Untracked - files that are in your working directory, but not added to the repository
+
+
+Git staging environment
+5)git add index.html
+Staged files are files that are ready to be committed
+
+6)git add -all
+
+Git commit
+7)git commit -m "First release of Hello World!"
+When we commit, we should always include a message.
+
+Git commit without staging
+8) git commit -a -m "Updated index.html with a new line"
+
+Git commit log
+9)git log
+
+Git Branch
+10)git branch hello-world-images
+
+Let's confirm that we have created a new branch:
+git branch
+
+Checkout
+11)git checkout "hello-world-images"
+checkout is the command used to check out a branch. Moving us from the current branch, to the one specified at the end of the command
+
+Added new file and modify the existing file to this new branch
+12)git add -all
+git status
+git commit -m "Added image to Hello World"
+
+Emergency fix:
+13)git checkout -b emergency fix
+I don't want to mess with master directly, and I do not want to mess with hello-world-images, since it is not done yet.
+So we create a new branch to deal with the emergency.
+
+Git branch merge:
+14)git merge "hello-world-images"
+
+After merge, delete the branche
+14)git branch -d emergency fix
+
+Merge Conflict
+-Check the code and choose which code is suitable then edit the code
+15)git add --all
+gir commit -m "message"

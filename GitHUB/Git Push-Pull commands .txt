@@ -1,0 +1,64 @@
+git remote add origin URL specifies that you are adding a remote repository, with the specified URL, as an origin to your local Git repo.
+1)git remote add origin https://github.com/NarendranManoharan/Praatice-for-Git-commands.git
+
+Then push the master branch to the origin url, and set it as the default remote branch
+2)git push --set-upstream origin master
+
+Git Pull:
+pull is a combination of 2 different commands:
+
+-fetch
+-merge
+
+Git fetch:
+1)git fetch origin 
+fetch gets all the change history of a tracked branch/repo.
+So, on your local Git, fetch updates to see what has changed on GitHub:
+
+2)git status
+3)git log origin/master
+4)git diff origin/master 
+
+Git merge:
+1)git merge origin/master
+2)git status
+
+Git Pull:
+1)git pull origin
+pull is a combination of fetch and merge. It is used to pull all changes from a remote repository
+into the branch you are working on.
+
+Git Push:
+1)git commit -a -m "Updated"
+update the file and commit it before push to GitHub
+
+2)git push origin
+
+
+
+Pull branch from Github
+3)git pull
+
+-From https://github.com/NarendranManoharan/Git_Commands_Practice
+ *[new branch]      varisu     -> origin/varisu
+Already up to date
+
+4)git branch -a
+list the newly added branch
+
+5)git checkout newbranch
+
+
+
+Push branch to Github
+6)git checkout -b leo
+create a new branch in local, checkout to the branch
+
+7)git push origin leo
+
+
+
+
+
+Git clone from Github
+8)git clone https://github.com/NarendranManoharan/Git_Commands_Practice.git
