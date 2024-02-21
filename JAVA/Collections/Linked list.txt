@@ -1,0 +1,15 @@
+Linked list - it is not effective for search operation, effective for insert and delete
+
+Synatx
+LinkedList<String> linkedlist=new LinkedList<String>
+
+Methods:
+addfirst
+asslast
+removefirst
+removelast
+poll (same as  removefirst)
+pollLast (same as removelast)
+removefirstoccurenceof(int)
+removelastoccurenceof(int)
+

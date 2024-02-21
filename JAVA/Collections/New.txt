@@ -1,0 +1,22 @@
+List
+-it allows duplictae
+-it maintains order
+list.add()
+list.remove()
+list.size()
+list.get()
+list.contains()
+list.isempty()
+list.clear()
+
+Set
+-it doesnt allows duplictae
+-insertion order not maintained
+
+ LinkedhashSet:
+ -insertion order maintained
+
+ Treeset:
+ - insertion order maintained as alphabetical
+
+
