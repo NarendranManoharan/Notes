@@ -1,0 +1,14 @@
+1)Extent report initialization
+
+2)Why the Mutiple inheritance not supported in java
+Ans: Java disallows multiple inheritance to avoid the complexity and ambiguity associated with it, particularly the "diamond problem,"
+ where a class inherits from two classes that have a common ancestor, leading to conflicts in the inheritance of methods.
+ 
+3)public static void main(string args[])
+ If the static removed in above line the code will work or not
+
+4)Exceptions faced in selenium
+
+5)does interface extends interface
+
+6)does a single interface inherits multiple classes
