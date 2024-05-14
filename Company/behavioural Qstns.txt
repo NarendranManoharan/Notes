@@ -1,0 +1,46 @@
+How to add Regression test cases:
+-if its new functionality write new test script
+-if  its upgraded with existing functionality, find the test case and update it
+
+
+_NaRen@Natty#2324!
+
+1)Automation Challenges
+
+-pipeline issue
+  (local run vs virutal issue)-keyaction
+  troubleshoot: keyaction ilama jsp
+  
+-synchrinization issue
+   selenium bit more faster dhan web app
+   -wait
+   
+-Merge Conflict
+ -i hsve to review the my own code
+ 
+-shadow DOM
+-Chromedriver version, currenlty 124 but actually released ver is 114 (selenium 4)
+-SeleniumManager (4.13.0)
+  webdriverManager.chromedriver.setup();
+   chromedriver.exe
+   
+Project Implementation
+-
+-
+
+
+
+2)Refinemenmt
+-every 2 weeks there is a meeting common for team
+
+
+3)Inconsistent bug 
+-bug leakage
+
+4)
+
+
+
+To know about comcast 
+- which is product based company media and entertainmenr, cable netwirk, NBCU 
+-cloud based application
