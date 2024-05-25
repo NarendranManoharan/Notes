@@ -1,0 +1,31 @@
+int[] ar={1,2,3,4};
+
+Set<int> small=new Set<int>();
+
+int smallestnum=Integer.Max;
+foreach(int i in ar){
+ if(i<smallestnum){
+     smallestnum= i;
+	 set.add(smallestnum)b 
+ }
+ small.get[2];
+}
+
+String s="Narendran"
+ char[] ss= s.tochararray[];
+for(int i=ss.length-1; i>0; i--){
+
+console.writeline(ss[i]);
+}
+
+IWebdriver driver=new Chromedriver();
+
+driver.manage().timeout().implicitWait(Duration.ofSeconds(10));
+
+WebDriverwait wait =new Webdriverwait(driver, Duration.ofSeconds(10));
+wait.until(ExpectedConditions.Elementtobeclicable(By.xapth"//*[@text='Login']));
+
+employee   id  name salary 
+
+
+(//*[@text='Employee']/tr["+ i + "]/td[3]);
