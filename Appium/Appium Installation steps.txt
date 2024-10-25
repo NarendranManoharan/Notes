@@ -1,0 +1,48 @@
+Download and install Java
+Set Java_Home in environment variable
+-Java_Home : Java installed path
+-
+
+
+
+Appium:
+
+
+1) Node.js - JRE for java same as Node.js for Javascript
+-Install node.js in and check the version using 
+node -v
+Note: close the command prompt ad reopen after install
+
+
+2) Install the appium using npm:
+npm install -g appium
+
+
+Need to download Android SDK which is two methods
+1. Install android studio then the SDK file will be downloaded along with that
+2. Else download SDK manager packages manually
+
+3) Download Android studio:
+
+Find the Android SDK file in below mentioned path after Android Studio installation
+C:\Users\<username>\AppData\Local\Android\SDK
+
+After installaton set Android_Home path in Environment variable
+IN environment variable:
+-Android_Home : C:\Users\<username>\AppData\Local\Android\SDK ====>>IF SDK installed through Android SDK
+-Android_Home :   
+
+In path variable:
+- %Android_Home%
+- %Android_Home%\tools
+- %Android_Home%\platform-tools
+
+
+for installing Android command line tools:
+
+
+4)Install appium-doctor
+npm install appium-doctor -g
+
+To run: Appium-doctor
+
