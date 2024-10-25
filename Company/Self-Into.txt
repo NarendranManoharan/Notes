@@ -1,11 +1,11 @@
-Im Narendran. Im having 2.10 years of experience in automation testing. I work predominently in Selenium Web automation with Core java,
-which includes multiple framework like Cucumber, Data Driven, POM and TestNG. In addition Have wotk with API testing using Postman and 
-Mobie testing using Appium. and also i have knowledege in Jenkins and Github actions
+Im Narendran. Im having 2.10 years of experience in automation testing. I work predominantly in Selenium Web automation with Core java,
+which includes multiple framework like Cucumber, Data Driven, POM and TestNG. In addition Have work with API testing using Postman and 
+Mobie testing using Appium. and also i have knowledge in Jenkins and GitHub actions
 
 I am working in Gavs technologies for 2.8 years and Gavs in 2 months
 - actually In gavs they going to Ramp off the project and they do not have clear to allocate project to employee 
-Moreover that i have already attended interview here and got selcted in first round, but unfirtunately they freeze hiring, Luckily i got my call back
-Because a product company like Comcaast is my first priority so that i dont want to miss this oppourtunity
+Moreover that i have already attended interview here and got selected in first round, but unfortunately they freeze hiring, Luckily i got my call back
+Because a product company like Comcast is my first priority so that i don't want to miss this opportunity
 
 
  

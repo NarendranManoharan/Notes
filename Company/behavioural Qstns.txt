@@ -18,6 +18,8 @@ _NaRen@Natty#2324!
 -Merge Conflict
  -i hsve to review the my own code
  
+-Keyaction not works in global
+
 -shadow DOM
 -Chromedriver version, currenlty 124 but actually released ver is 114 (selenium 4)
 -SeleniumManager (4.13.0)
@@ -42,5 +44,5 @@ Project Implementation
 
 
 To know about comcast 
-- which is product based company media and entertainmenr, cable netwirk, NBCU 
+- which is product based company media and entertainment, cable network, NBCU 
 -cloud based application

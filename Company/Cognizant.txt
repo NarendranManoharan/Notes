@@ -1,0 +1,28 @@
+
+Webriver driver=new Chromedriver();
+driver.get("www.google.com");
+
+  List<Webelement> alllinks= driver.findelements(By.tagname("a"));
+  
+  for(Webelement link: alllinks){
+     link.click();
+	 driver.navigate.back();
+	 }
+	 
+	 
+	 
+@CucumberOptions{
+Feature=Loginfeature.feature;
+glue=StepDefinitions, Hooks;
+Dryrun= true;
+plugin=
+monochrome=true;
+}
+
+
+1)Duplicate character in string
+2)Program output using continue;
+3)Find all the links in Webpage and click all
+4)How to find broken links?
+5)Cucumber runner file
+6)Background and hooks

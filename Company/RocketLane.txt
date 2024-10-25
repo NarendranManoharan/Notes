@@ -1,0 +1,10 @@
+Number is divisible by 5 is "Rocket"
+Number is divisible by 7 is "Lane"
+Number is divisible by 7 and 5 is "RocketLane"
+if it is encountered {11, 7, 70, 35, 26} then it will printed only the number and override other conditions and printed "Lucky"
+
+if it is not divisible by 7 and 5 then print the same number
+
+
+
+
